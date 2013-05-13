@@ -11,8 +11,15 @@ No gradients, no 1px edges and not a thousand different icon sprites. Just color
 Installation
 ------------------------------------------------------------------------
 
-Clone it or download into your packages directory.
-Make sure that it resides in a folder called `Theme - Centurion` 
+###OSX
+
+Clone it into your packages directory.
+
+    cd ~/Library/Application Support/Sublime Text 2/Packages
+
+    git clone git://github.com/burticlies/Centurion.git 'Theme - Centurion'
+       
+Make sure you have the `Theme - Centurion` at the end of the command so it is placed in the correct folder.  
 Unless of course you feel like experiencing the wrath of none icons. 
 
 Then press `super+,` to access your `Settings - User` and insert: 
