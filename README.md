@@ -4,7 +4,7 @@ Centurion
 A clean cut UI theme for Sublime Text 2. Bastardised from the source code of [Soda](https://github.com/buymeasoda/soda-theme/) 
 
 Centurion was made out of a want for less UI and more code. It's so minimal you can barely see it. 
-No gradients, no 1px edges and not a thousand different icon sprites. Just color, shape and 14 [icons](https://http://www.glyphicons.com/). 
+No gradients, no 1px edges and not a thousand different icon sprites. Just color, shape and 14 [icons](http://www.glyphicons.com/). 
 
 ![Centurion theme](https://raw.github.com/burticlies/Centurion/master/Centurion.png)  
 
