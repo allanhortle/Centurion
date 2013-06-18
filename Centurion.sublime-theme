@@ -578,7 +578,7 @@
         "class": "disclosure_button_control",
         "settings": ["soda_folder_icons"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-closed-selected.png"
+        "layer0.texture": "Theme - Centurion/Centurion/folder-closed.png"
     },
     // Sidebar group open
     {
@@ -595,7 +595,7 @@
         "class": "disclosure_button_control",
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/group-open-selected.png"
+        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
     },
     // Sidebar folder open
     {
@@ -609,14 +609,14 @@
         "settings": ["soda_folder_icons"],
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["hover"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open-hover.png"
+        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
     },
     {
         "class": "disclosure_button_control",
         "settings": ["soda_folder_icons"],
         "attributes": ["expanded"],
         "parents": [{"class": "tree_row", "attributes": ["selected"]}],
-        "layer0.texture": "Theme - Centurion/Centurion/folder-open-selected.png"
+        "layer0.texture": "Theme - Centurion/Centurion/folder-open.png"
     },
 
 //
