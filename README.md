@@ -11,10 +11,16 @@ I think it works best with the [Tomorrow Night - Eighties](https://github.com/ch
 
 Installation
 ------------------------------------------------------------------------
+###Package Control
 
-###OSX
+Just install it and make sure to update your `Settings - User` file with:
 
-Clone it into your packages directory.
+    "theme": "Centurion.sublime-theme"
+    
+
+###Manual
+
+Clone it into your packages directory. These are OSX paths because I'm lazy like that. For Windows/Other just substitue your paths like a boss.
 
     cd ~/Library/Application Support/Sublime Text 2/Packages
 
