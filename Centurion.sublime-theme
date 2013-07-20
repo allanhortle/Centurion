@@ -26,7 +26,7 @@
     // Tab element
     {
         "class": "tab_control",
-        "content_margin": 0,
+        "content_margin": [8,0],
         "max_margin_trim": 0,
         "hit_test_level": 0.0,
         "layer0.texture": "",
