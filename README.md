@@ -20,7 +20,7 @@ Just install it and make sure to update your `Settings - User` file with:
 
 ###Manual
 
-Clone it into your packages directory. These are OSX paths because I'm lazy like that. For Windows/Other just substitue your paths like a boss.
+Clone it into your packages directory. These are OSX paths because I'm lazy like that. For Windows/Other just substitute your paths like a boss.
 
     cd ~/Library/Application Support/Sublime Text 2/Packages
 
