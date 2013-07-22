@@ -27,7 +27,7 @@ Clone it into your packages directory. These are OSX paths because I'm lazy like
     git clone git://github.com/allanhortle/Centurion.git 'Theme - Centurion'
        
 Make sure you have the `Theme - Centurion` at the end of the command so it is placed in the correct folder.  
-Unless of course you feel like experiencing the wrath of none icons. 
+Unless of course you feel like experiencing the wrath of no icons. 
 
 Back to Sublime Text, press `super+,` to access your `Settings - User` and insert: 
         
