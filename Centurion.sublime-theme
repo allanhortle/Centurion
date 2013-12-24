@@ -391,7 +391,8 @@
         "layer0.texture": "",
         "layer0.tint": [40,40,40],
         "layer0.opacity": 1,
-        "content_margin":4
+        "layer0.inner_margin": [2, 2],
+        "content_margin": [8, 4, 8, 4]
     },
     // Status bar button
     {
