@@ -1,7 +1,7 @@
 Centurion
 =========
 
-A clean cut UI theme for Sublime Text 2 bastardised from the source code of [Soda](https://github.com/buymeasoda/soda-theme/).
+A clean cut UI theme for Sublime Text bastardised from the source code of [Soda](https://github.com/buymeasoda/soda-theme/).
 
 Centurion was made out of a want for less UI and more code. It's so minimal you can barely see it. 
 No gradients, no 1px edges and not a thousand different icon sprites. Just color, shape and 14 [icons](http://www.glyphicons.com/).  
@@ -34,3 +34,21 @@ Back to Sublime Text, press `super+,` to access your `Settings - User` and inser
         "theme": "Centurion.sublime-theme"
 
 If it looks like crap make sure to restart Sublime before crying. 
+
+## Galea
+Centurion now ships with it's own syntax highlighing. Galea is a simple theme designed to cut down on the use of color in conflicting locations. There are only five colors, each relating to a high level textmate scope. 
+
+| Color         | Scope                |
+| ------------- |----------------------|
+| Yellow      	| Entity / Tag         |
+| Red      		| Support / Keyword    |
+| Orange 		| Storage    		   |
+| Green         | String               |
+| Blue          | Constant             |
+
+Additionally each file's background is tinted to distinguish it's type. Frontend remains grey, backend is blue and datafiles are green. 
+
+### Bugs
+If you like the theme and  find some bugs please do let me know. I've been testing it only with my current pipeline so there are bound to be file types that miss out. Just bug it out and I'll do my best to fix them up. 
+
+
