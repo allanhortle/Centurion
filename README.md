@@ -35,7 +35,7 @@ Back to Sublime Text, press `super+,` to access your `Settings - User` and inser
 If it looks like crap make sure to restart Sublime before crying. 
 
 ## Galea
-Centurion now ships with it's own syntax highlighing. Galea is a simple theme designed to cut down on the use of color in conflicting locations. There are only five colors, each relating to a high level textmate scope. 
+Centurion now ships with it's own syntax highlighting. Galea is a simple theme designed to cut down on the use of color in conflicting locations. There are only five colors, each relating to a high level textmate scope. 
 
 | Color         | Scope                |
 | ------------- |----------------------|
