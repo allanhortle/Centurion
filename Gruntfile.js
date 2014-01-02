@@ -1,60 +1,86 @@
 module.exports = function(grunt) {
 	// Load tasks
 	require('load-grunt-tasks')(grunt);
- 
+
+	var config = {
+
+		// Colors
+		green:[96,172,123],
+		blue:[90, 138, 165],
+		yellow:[218, 174, 105],
+		orange:[225, 134, 84],
+		red:[190, 90, 78],
+
+		// Paths
+		folderName:'centurion_dev'
+
+	}
+
+
+	// Color Functions
+	var colorChange = function(arr, value){
+		var a = arr.slice();
+		for (var i = a.length - 1; i >= 0; i--) {
+			a[i] = a[i] + (value);
+		};
+		return a;
+	}
+
+	// Set theme Color here
+	config.hero = config.blue;
+
+	//Define Color variations
+	config.heroDarker1 = colorChange(config.hero,-32);
+	config.heroDarker2 = colorChange(config.hero,-64);
+	config.heroLighter1 = colorChange(config.hero,32);
+
 	// Project configuration.
 	grunt.initConfig({
-		// Metadata.
-		pkg: grunt.file.readJSON('package.json'),
-		config:{
-
-			// Change this to the theme folder relative to this Gruntfile 
-			themeDest:'../../Library/Application Support/Sublime Text 2/Packages/Theme - Centurion',
-			color:{
-				hero:[116, 192, 143],
-				test:[0, 255, 0]
-			}
+		concat: {
+			options: {
+				banner:'[',
+				footer:',{}]',
+				separator:','
+			},
+			dist: {
+				src: ['src/*'],
+				dest: 'Centurion.json',
+			},
 		},
 		'string-replace': {
 			dist: {
 				files: {
-					'Centurion.sublime-theme':'Centurion.json'
+					'Centurion.sublime-theme':['Centurion.json']
 				},
 				options: {
 					replacements: [{
 						pattern: /\{\{(.*?)\}\}/ig,
 						replacement: function (match, p1, offset, string) {
-							return JSON.stringify(grunt.config.get('config.color')[p1]);
+							var replace = config[p1]
+							if(typeof replace === 'object'){
+								return JSON.stringify(replace);
+							}
+							return replace;
 						}
 					}]
 				}
 			}
 		},
-		copy:{
-			dist:{
-				files:[
-					{
-						expand: true,
-						src: ['Centurion.sublime-theme'], 
-						dest: '<%= config.themeDest %>'
-					}
-				]
-			}
-		},
 		watch: {
 			scripts: {
 				files: ['**/*.json'],
-				tasks: ['string-replace', 'copy'],
+				tasks: ['concat','string-replace'],
 				options: {
 					spawn: false,
 		    	},
 			},
 		},
 	});
- 
+
 	// Default task.
 	grunt.registerTask('default', [
-		'string-replace',
-		'copy'
+		'concat',
+		'string-replace'
 	]);
 };
+
