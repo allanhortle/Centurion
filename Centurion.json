@@ -7,7 +7,7 @@
 // Default button state
 {
     "class": "button_control",
-    "content_margin": [6,7,6,7],
+    "content_margin": 9,
     "min_size": [60,0],
     "layer0.texture": "",
     "layer0.opacity": 1,
@@ -19,14 +19,14 @@
     "class": "button_control",
     "attributes": ["hover"],
     "layer0.texture": "",
-    "layer0.tint": [33,33,33]
+    "layer0.tint": {{hero}}
 },
 // Pressed button state
 {
     "class": "button_control",
     "attributes": ["pressed"],
     "layer0.texture": "",
-    "layer0.tint": [20,20,20]
+    "layer0.tint": {{heroDarker1}}
 },
 
 
@@ -37,10 +37,9 @@
 // Button group middle
 {
     "class": "icon_button_control",
-    "layer1.texture": "",
-    "layer1.opacity": 1,
     "layer1.tint":[30,30,30],
-    "content_margin": 4
+    "layer1.opacity":1,
+    "content_margin": 7
 },
 {
     "class": "icon_button_control",
@@ -48,45 +47,43 @@
     "layer0.texture": "",
     "layer1.tint":[80,80,80]
 },
-// Button group left
+
 {
     "class": "icon_button_control",
-    "attributes": ["left"],
-    "layer0.texture": ""
+    "attributes": ["hover"],
+    "layer1.tint":{{hero}}
 },
-// Button group left
-{
-    "class": "icon_button_control",
-    "attributes": ["left"],
-    "layer0.texture": ""
-},
-{
-    "class": "icon_button_control",
-    "attributes": ["left","selected"],
-    "layer0.texture": ""
-},
-// Button group right
-{
-    "class": "icon_button_control",
-    "attributes": ["right"],
-    "layer0.texture": ""
-},
-{
-    "class": "icon_button_control",
-    "attributes": ["right","selected"],
-    "layer0.texture": ""
-},
-// Button single
-{
-    "class": "icon_button_control",
-    "attributes": ["left","right"],
-    "layer0.texture": ""
-},
-{
-    "class": "icon_button_control",
-    "attributes": ["left","right","selected"],
-    "layer0.texture": ""
-},
+
+// /** Small Icon Buttons **/
+// {
+//     "class": "icon_button_control",
+//     "layer0.texture": "Theme - Default/middle_button.png",
+//     "layer0.inner_margin": [6, 6],
+//     "layer0.opacity": 1.0,
+//     "layer2.texture": "Theme - Default/blue_highlight.png",
+//     "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" },
+//     "content_margin": [4, 4]
+// },
+// {
+//     "class": "icon_button_control",
+//     "attributes": ["left"],
+//     "layer0.texture": "Theme - Default/left_button.png",
+//     "layer0.opacity": 1.0
+// },
+// {
+//     "class": "icon_button_control",
+//     "attributes": ["right"],
+//     "layer0.texture": "Theme - Default/right_button.png",
+//     "layer0.opacity": 1.0
+// },
+// {
+//     "class": "icon_button_control",
+//     "attributes": ["left", "right"],
+//     "layer0.texture": "Theme - Default/mini_button.png",
+//     "layer0.opacity": 1.0,
+//     "layer0.draw_center": true
+// },
+
 
 //
 // BOTTOM PANEL ICONS - GROUP 1
@@ -295,39 +292,13 @@
         "attributes": ["expanded","hover"]
     }
 ,
-//
-// TEXT INPUT FIELD
-//
 
-// Text input field item
-{
-    "class": "text_line_control",
-    "layer0.texture": "",
-    "layer0.tint": [30,30,30],
-    "layer0.opacity": 1,
-    "content_margin": [3,4,0,0]
-},
-
-//
-// PANEL BACKGROUNDS
-//
-
-// Bottom panel background
-{
-    "class": "panel_control",
-    "layer0.texture": "",
-    "layer0.inner_margin": [0,0],
-    "layer0.opacity": 1,
-    "layer0.tint": [40,40,40],
-    "content_margin": 0
-},
 // Quick panel background
 {
     "class": "overlay_control",
     "layer0.opacity": 1,
-    "layer1.texture": "",
-    "layer1.tint": [60,60,60],
-    "layer1.inner_margin": [0,0,0,0],
+    "layer1.tint": [50,50,50],
+    "layer1.inner_margin": 0,
     "layer1.opacity": 1,
     "content_margin": 0
 },
@@ -340,8 +311,8 @@
     "class": "quick_panel",
     "row_padding": 8,
     "layer0.tint": [30,30,30],
-    "layer0.opacity": 1,
-    "dark_content": true
+    "layer0.opacity": 1
+    //"dark_content": true
 },
 {
     "class": "quick_panel_row",
@@ -392,7 +363,7 @@
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": [90,147,94]
+    "layer0.tint": {{hero}}
 },
 //
 // STANDARD SCROLLBARS
@@ -466,7 +437,7 @@
         "settings": ["overlay_scroll_bars"],
         "layer0.texture": "",
         "layer0.tint": [40,40,40],
-        "layer0.inner_margin": [0,5],
+        "layer0.inner_margin": 0,
         "blur": false
     },
     // Overlay horizontal scroll bar
@@ -727,7 +698,6 @@
     "parents": [{"class": "tree_row","attributes": ["selected"]}],
     "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
 },
-
 //
 // STATUS BAR
 //
@@ -735,16 +705,15 @@
 // Status bar container
 {
     "class": "status_bar",
-    "layer0.texture": "",
-    "layer0.tint": [40,40,40],
+    "layer0.tint": [50,50,50],
     "layer0.opacity": 1,
-    "layer0.inner_margin": [2, 2],
-    "content_margin": [8, 4, 8, 4]
+    "layer0.inner_margin": 0,
+    "content_margin": [8,2,8,6]
 },
 // Status bar button
 {
     "class": "status_button",
-    "min_size": [40,0]
+    "content_margin": [8,0,0,0]
 },
 // Status bar label
 {
@@ -773,7 +742,7 @@
     "class": "tab_close_button",
     "parents": [{"class": "tab_control","attributes": ["hover"]}],
     "layer0.opacity": 1,
-    "layer0.tint": [255,80,80]
+    "layer0.tint": {{red}}
 
 },
 {
@@ -787,7 +756,7 @@
     "class": "tab_close_button",
     "parents": [{"class": "tab_control","attributes": ["dirty"]}],
     "layer0.texture": "{{folderName}}/Centurion/circle.png",
-    "layer0.tint": [81,166,203],
+    "layer0.tint": {{blue}},
     "layer0.opacity": 1
 },
 {
@@ -922,8 +891,7 @@
 
 {
     "class": "sheet_container_control",
-    "layer0.tint": [20,20,20],
-    "layer0.opacity": 1
+    "layer0.tint": [20,20,20]
 },
 
 //
@@ -942,7 +910,33 @@
 
 {
     "class": "minimap_control",
-    "viewport_color": [255,255,255,35]
+    "viewport_color": [255,255,255,30]
+},
+
+//
+// TEXT INPUT FIELD
+//
+
+// Text input field item
+{
+    "class": "text_line_control",
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [4, 5, 4, 3],
+    "layer0.tint": [30,30,30],
+    "content_margin": 8
+},
+
+//
+// PANEL BACKGROUNDS
+//
+
+// Bottom panel background
+{
+    "class": "panel_control",
+    "layer0.inner_margin": [0,0],
+    "layer0.opacity": 1,
+    "layer0.tint": [50,50,50],
+    "content_margin": 0
 },
 
 //
@@ -952,21 +946,19 @@
 // General labels
 {
     "class": "label_control",
-    "color": [204,204,204]
+    "color": [220,220,220]
 },
+
 // Text field labels
 {
     "class": "label_control",
-    "parents": [{"class": "panel_control"}],
-    "shadow_color": [50,50,50],
-    "shadow_offset": [0,0]
+    "parents": [{"class": "panel_control"}]
 },
+
 // Button labels
 {
     "class": "label_control",
-    "parents": [{"class": "button_control"}],
-    "shadow_color": [55,55,55],
-    "shadow_offset": [0,0]
+    "parents": [{"class": "button_control"}]
 },
 
 //

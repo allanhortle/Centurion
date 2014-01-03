@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 		red:[190, 90, 78],
 
 		// Paths
-		folderName:'centurion_dev'
+		folderName:'Theme - Centurion'
 
 	}
 
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 	}
 
 	// Set theme Color here
-	config.hero = config.blue;
+	config.hero = config.green;
 
 	//Define Color variations
 	config.heroDarker1 = colorChange(config.hero,-32);
@@ -50,7 +50,8 @@ module.exports = function(grunt) {
 		'string-replace': {
 			dist: {
 				files: {
-					'Centurion.sublime-theme':['Centurion.json']
+					'Centurion.sublime-theme':['Centurion.json'],
+					'Centurion/Widget - Centurion.sublime-settings':['settings.json']
 				},
 				options: {
 					replacements: [{

@@ -49,7 +49,7 @@
 			<key>scope</key>
 			<string>source.php, source.asp, source.ruby, source.python, source.perl</string>
 			<key>settings</key>
-			<dict>				
+			<dict>
 				<key>background</key>
 				<string>#262A2E</string>
 			</dict>
@@ -86,9 +86,9 @@
 				<string>#55665B</string>
 			</dict>
 		</dict>
-		
 
-		
+
+
 
 
 		<!-- Constants -->
@@ -174,8 +174,8 @@
 				<key>foreground</key>
 				<string>#E1865A</string>
 			</dict>
-		</dict> 
-		
+		</dict>
+
 
 		<!-- Markup -->
 		<dict>
@@ -198,9 +198,9 @@
 		</dict>
 
 
-		
 
-		
+
+
 	</array>
 	<key>uuid</key>
 	<string>4fd09b3b-24e7-4c7a-9462-85e8f81e470c</string>
