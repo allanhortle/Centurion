@@ -1,0 +1,27 @@
+{
+  "name": "Centurion",
+  "version": "0.0.0",
+  "description": "Sublime Text Theme",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/allanhortle/Centurion.git"
+  },
+  "keywords": [
+    "Theme"
+  ],
+  "author": "Allan Hortle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allanhortle/Centurion/issues"
+  },
+  "homepage": "https://github.com/allanhortle/Centurion",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-string-replace": "~0.2.7",
+    "grunt-contrib-copy": "~0.5.0",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0"
+  }
+}

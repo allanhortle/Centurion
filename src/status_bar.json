@@ -1,0 +1,25 @@
+
+//
+// STATUS BAR
+//
+
+// Status bar container
+{
+    "class": "status_bar",
+    "layer0.tint": [50,50,50],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": 0,
+    "content_margin": [8,2,8,6]
+},
+// Status bar button
+{
+    "class": "status_button",
+    "content_margin": [8,0,0,0]
+},
+// Status bar label
+{
+    "class": "label_control",
+    "parents": [{"class": "status_bar"}],
+    "color": [150,150,150],
+    "shadow_offset": [0,0]
+}

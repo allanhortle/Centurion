@@ -1,0 +1,37 @@
+
+
+//
+// CODE COMPLETION DROPDOWN
+//
+
+{
+    "class": "popup_control",
+    "content_margin": [0,0],
+    "layer0.tint": [30,30,30],
+    "layer0.opacity": 1
+},
+{
+    "class": "auto_complete",
+    "row_padding": [4,2]
+},
+{
+    "class": "auto_complete_label",
+    "fg": [210,210,210],
+    "match_fg": {{hero}},
+    "selected_fg": [255,255,255],
+    "selected_match_fg": [255,255,255]
+},
+{
+    "class": "table_row",
+    "layer0.texture": "",
+    "layer0.tint":{{hero}},
+    "layer0.opacity": 0,
+    "layer0.inner_margin": [3,1]
+},
+{
+    "class": "table_row",
+    "attributes": ["selected"],
+    "layer0.opacity": 1
+}
+
+

@@ -1,0 +1,96 @@
+
+
+//
+// EMPTY WINDOW BACKGROUND
+//
+
+{
+    "class": "sheet_container_control",
+    "layer0.tint": [20,20,20]
+},
+
+//
+// GRID LAYOUT
+//
+
+{
+    "class": "grid_layout_control",
+    "border_size": 0,
+    "border_color": [40,40,40]
+},
+
+//
+// MINI MAP
+//
+
+{
+    "class": "minimap_control",
+    "viewport_color": [255,255,255,30]
+},
+
+//
+// TEXT INPUT FIELD
+//
+
+// Text input field item
+{
+    "class": "text_line_control",
+    "layer0.opacity": 1.0,
+    "layer0.inner_margin": [4, 5, 4, 3],
+    "layer0.tint": [30,30,30],
+    "content_margin": 8
+},
+
+//
+// PANEL BACKGROUNDS
+//
+
+// Bottom panel background
+{
+    "class": "panel_control",
+    "layer0.inner_margin": [0,0],
+    "layer0.opacity": 1,
+    "layer0.tint": [50,50,50],
+    "content_margin": 0
+},
+
+//
+// LABELS
+//
+
+// General labels
+{
+    "class": "label_control",
+    "color": [220,220,220]
+},
+
+// Text field labels
+{
+    "class": "label_control",
+    "parents": [{"class": "panel_control"}]
+},
+
+// Button labels
+{
+    "class": "label_control",
+    "parents": [{"class": "button_control"}]
+},
+
+//
+// TOOLTIP
+//
+
+// Tooltip container
+{
+    "class": "tool_tip_control",
+    "layer0.texture": "",
+    "layer0.tint": [60,60,60],
+    "layer0.inner_margin": [1,1],
+    "layer0.opacity": 1,
+    "content_margin": [4,4]
+},
+// Tooltip content
+{
+    "class": "tool_tip_label_control",
+    "color": [230,230,230]
+}

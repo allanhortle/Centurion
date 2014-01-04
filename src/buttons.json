@@ -1,0 +1,232 @@
+
+
+//
+// STANDARD TEXT BUTTONS {{heroDarker1}}
+//
+
+// Default button state
+{
+    "class": "button_control",
+    "content_margin": 9,
+    "min_size": [60,0],
+    "layer0.texture": "",
+    "layer0.opacity": 1,
+    "layer0.tint": [30,30,30],
+    "layer0.inner_margin": [6,6]
+},
+// Hover button state
+{
+    "class": "button_control",
+    "attributes": ["hover"],
+    "layer0.texture": "",
+    "layer0.tint": {{hero}}
+},
+// Pressed button state
+{
+    "class": "button_control",
+    "attributes": ["pressed"],
+    "layer0.texture": "",
+    "layer0.tint": {{heroDarker1}}
+},
+
+
+//
+// BOTTOM PANEL BUTTONS
+//
+
+// Button group middle
+{
+    "class": "icon_button_control",
+    "layer1.tint":[30,30,30],
+    "layer1.opacity":1,
+    "content_margin": 7
+},
+{
+    "class": "icon_button_control",
+    "attributes": ["selected"],
+    "layer0.texture": "",
+    "layer1.tint":[80,80,80]
+},
+
+{
+    "class": "icon_button_control",
+    "attributes": ["hover"],
+    "layer1.tint":{{hero}}
+},
+
+// /** Small Icon Buttons **/
+// {
+//     "class": "icon_button_control",
+//     "layer0.texture": "Theme - Default/middle_button.png",
+//     "layer0.inner_margin": [6, 6],
+//     "layer0.opacity": 1.0,
+//     "layer2.texture": "Theme - Default/blue_highlight.png",
+//     "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" },
+//     "content_margin": [4, 4]
+// },
+// {
+//     "class": "icon_button_control",
+//     "attributes": ["left"],
+//     "layer0.texture": "Theme - Default/left_button.png",
+//     "layer0.opacity": 1.0
+// },
+// {
+//     "class": "icon_button_control",
+//     "attributes": ["right"],
+//     "layer0.texture": "Theme - Default/right_button.png",
+//     "layer0.opacity": 1.0
+// },
+// {
+//     "class": "icon_button_control",
+//     "attributes": ["left", "right"],
+//     "layer0.texture": "Theme - Default/mini_button.png",
+//     "layer0.opacity": 1.0,
+//     "layer0.draw_center": true
+// },
+
+
+//
+// BOTTOM PANEL ICONS - GROUP 1
+//
+
+// Regex search button
+{
+    "class": "icon_regex",
+    "layer0.texture": "{{folderName}}/Centurion/asterisk.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+
+},
+{
+    "class": "icon_regex",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+// Case sensitive search button
+{
+    "class": "icon_case",
+    "layer0.texture": "{{folderName}}/Centurion/capital.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_case",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+// Match whole word search button
+{
+    "class": "icon_whole_word",
+    "layer0.texture": "{{folderName}}/Centurion/quotes.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_whole_word",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+
+//
+// BOTTOM PANEL ICONS - GROUP 1 (EXTENDED: FIND IN FILES)
+//
+
+// Show search context button
+{
+    "class": "icon_context",
+    "layer0.texture": "{{folderName}}/Centurion/selection.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_context",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+// Use search buffer
+{
+    "class": "icon_use_buffer",
+    "layer0.texture": "{{folderName}}/Centurion/page.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_use_buffer",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+
+//
+// BOTTOM PANEL ICONS - GROUP 2
+//
+
+// Reverse search direction button (ST2 only)
+{
+    "class": "icon_reverse",
+    "layer0.texture": "{{folderName}}/Centurion/reverse.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_reverse",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+// Search wrap button
+{
+    "class": "icon_wrap",
+    "layer0.texture": "{{folderName}}/Centurion/wrap.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_wrap",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+// Search in selection button
+{
+    "class": "icon_in_selection",
+    "layer0.texture": "{{folderName}}/Centurion/selection.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_in_selection",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+
+//
+// BOTTOM PANEL ICONS - GROUP 3
+//
+
+// Preserve case button
+{
+    "class": "icon_preserve_case",
+    "layer0.texture": "{{folderName}}/Centurion/capital.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_preserve_case",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+
+//
+// BOTTOM PANEL ICONS - GROUP 4
+//
+
+// Highlight results button
+{
+    "class": "icon_highlight",
+    "layer0.texture": "{{folderName}}/Centurion/highlight.png",
+    "layer0.opacity": 0.5,
+    "content_margin": 9
+},
+{
+    "class": "icon_highlight",
+    "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+}

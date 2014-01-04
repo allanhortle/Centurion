@@ -1,0 +1,215 @@
+
+
+//
+// SIDEBAR
+//
+
+// Sidebar container
+{
+    "class": "sidebar_container",
+    "layer0.texture": "",
+    "layer0.opacity": 1,
+    "layer0.tint": [30,30,30],
+    "layer0.inner_margin": [1,5,2,1],
+    "content_margin": [0,4,0,0]
+},
+// Sidebar tree
+{
+    "class": "sidebar_tree",
+    "row_padding": [8,4],
+    "indent":16,
+    "indent_offset": 16,
+    "indent_top_level": false,
+    "dark_content": true
+},
+// Sidebar rows
+{
+    "class": "tree_row",
+    "layer0.texture": "",
+    "layer0.tint": [100,100,100],
+    "layer0.opacity": 0,
+    "layer0.inner_margin": [1,1]
+},
+// Sidebar row selected
+{
+    "class": "tree_row",
+    "attributes": ["selected"],
+    "layer0.opacity": 1
+},
+// Sidebar heading
+{
+    "class": "sidebar_heading",
+    "color": [210,210,210],
+    "font.bold": true,
+    "shadow_color": [0,0,0],
+    "shadow_offset": [0,0]
+},
+// Sidebar heading selected
+{
+    "class": "sidebar_heading",
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "shadow_offset": [0,0]
+},
+// Sidebar entry
+{
+    "class": "sidebar_label",
+    "color": [125,125,125],
+    "shadow_color": [0,0,0],
+    "shadow_offset": [0,0]
+},
+// Sidebar folder entry
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+    "color": [190,190,190]
+},
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
+    "color": [235,235,235]
+},
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+    "settings": ["bold_folder_labels"],
+    "font.bold": true
+},
+// Sidebar entry selected
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "color": [210,210,210],
+    "shadow_color": [0,0,0],
+    "shadow_offset": [0,0]
+},
+
+//
+// SIDEBAR - OPEN FILE ICONS
+//
+
+// Sidebar file close
+{
+    "class": "close_button",
+    "layer0.texture": "",
+    "layer0.opacity": 0,
+    "layer0.inner_margin": 0,
+    "layer0.tint": {{red}},
+    "content_margin": [8,8]
+},
+{
+    "class": "close_button",
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.opacity": 1,
+    "layer0.texture": "{{folderName}}/Centurion/cross.png"
+},
+// Sidebar file dirty
+{
+    "class": "close_button",
+    "attributes": ["dirty"],
+    "layer0.texture": "{{folderName}}/Centurion/circle.png",
+    "layer0.opacity": 1,
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "close_button",
+    "attributes": ["dirty"],
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png"
+},
+{
+    "class": "close_button",
+    "attributes": ["dirty"],
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png",
+    "layer0.opacity": 1
+},
+// Sidebar file close hover
+{
+    "class": "close_button",
+    "attributes": ["hover"],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png"
+},
+{
+    "class": "close_button",
+    "parents": [{"class": "tree_row","attributes": ["hover","selected"]}],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png",
+    "layer0.opacity": 1
+},
+
+//
+// SIDEBAR - GENERAL FILE ICONS
+//
+
+// Sidebar group closed
+{
+    "class": "disclosure_button_control",
+    "content_margin": [8,8],
+    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
+    "layer0.tint": {{hero}},
+    "layer0.opacity": 1,
+    "layer0.inner_margin": 0
+},
+{
+    "class": "disclosure_button_control",
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.tint":{{heroLighter1}}
+},
+{
+    "class": "disclosure_button_control",
+    "parents": [{"class": "tree_row","attributes": ["selected"]}]
+},
+// Sidebar folder closed
+{
+    "class": "disclosure_button_control",
+    "settings": ["soda_folder_icons"],
+    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png"
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["soda_folder_icons"],
+    "parents": [{"class": "tree_row","attributes": ["hover"]}]
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["soda_folder_icons"],
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png"
+},
+// Sidebar group open
+{
+    "class": "disclosure_button_control",
+    "attributes": ["expanded"],
+    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+},
+{
+    "class": "disclosure_button_control",
+    "attributes": ["expanded"],
+    "parents": [{"class": "tree_row","attributes": ["hover"]}]
+},
+{
+    "class": "disclosure_button_control",
+    "attributes": ["expanded"],
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+},
+// Sidebar folder open
+{
+    "class": "disclosure_button_control",
+    "settings": ["soda_folder_icons"],
+    "attributes": ["expanded"],
+    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["soda_folder_icons"],
+    "attributes": ["expanded"],
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["soda_folder_icons"],
+    "attributes": ["expanded"],
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+}
