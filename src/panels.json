@@ -1,0 +1,74 @@
+
+
+// Quick panel background
+{
+    "class": "overlay_control",
+    "layer0.opacity": 1,
+    "layer1.tint": [50,50,50],
+    "layer1.inner_margin": 0,
+    "layer1.opacity": 1,
+    "content_margin": 0
+},
+
+//
+// QUICK PANEL
+//
+
+{
+    "class": "quick_panel",
+    "row_padding": 8,
+    "layer0.tint": [30,30,30],
+    "layer0.opacity": 1
+    //"dark_content": true
+},
+{
+    "class": "quick_panel_row",
+    "layer0.texture": "",
+    "layer0.tint": [30,30,30],
+    "layer0.inner_margin": 8,
+    "layer0.opacity": 1
+},
+{
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "layer0.texture": "",
+    "layer0.tint": {{hero}}
+},
+
+{
+    "class": "quick_panel_label",
+    "fg": [240,240,240],
+    "match_fg": {{hero}},
+    "selected_fg": [255,255,255],
+    "selected_match_fg": {{heroDarker1}}
+},
+
+{
+    "class": "quick_panel_path_label",
+    "fg": [130,130,130,0],
+    "match_fg": [220,220,220],
+    "selected_fg": {{heroDarker2}},
+    "selected_match_fg": [220,220,220]
+},
+{
+    "class": "quick_panel_score_label",
+    "fg": [150,150,150],
+    "selected_fg": [255,255,255]
+},
+
+//
+// MINI QUICK PANEL
+//
+
+{
+    "class": "mini_quick_panel_row",
+    "layer0.texture": "",
+    "layer0.tint": [30,30,30],
+    "layer0.opacity": 1
+},
+{
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "layer0.texture": "",
+    "layer0.tint": {{hero}}
+}
