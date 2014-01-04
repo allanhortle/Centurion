@@ -6,7 +6,7 @@ A clean cut UI theme for Sublime Text 2 bastardised from the source code of [Sod
 Centurion was made out of a want for less UI and more code. It's so minimal you can barely see it.
 No gradients, no 1px edges and not a thousand different icon sprites. Just color, shape and 14 [icons].
 
-![Centurion theme](https://raw.github.com/allanhortle/Centurion/master/res/preview.png)
+![Centurion theme](https://raw.github.com/allanhortle/Centurion/master/res/Preview.png)
 
 ---
 
