@@ -94,7 +94,7 @@
 		<!-- Constants -->
 		<dict>
 			<key>scope</key>
-			<string>constant, constant.numeric, keyword.other.unit, support.constant</string>
+			<string>constant, constant.numeric, keyword.other, support.constant</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -163,12 +163,12 @@
 		</dict>
 
 
-		<!-- storage -->
+		<!-- storage  function-->
 		<dict>
 			<key>name</key>
 			<string>storage</string>
 			<key>scope</key>
-			<string>storage, support.function.misc</string>
+			<string>storage, support.function, variable</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
