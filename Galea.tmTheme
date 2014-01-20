@@ -94,7 +94,7 @@
 		<!-- Constants -->
 		<dict>
 			<key>scope</key>
-			<string>constant, constant.numeric, keyword.other.unit</string>
+			<string>constant, constant.numeric, keyword.other.unit, support.constant</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
