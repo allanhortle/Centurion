@@ -32,7 +32,7 @@
     "class": "quick_panel_row",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": {{hero}}
+    "layer0.tint": {{green}}
 },
 {
     "class": "quick_panel_row",
@@ -94,7 +94,7 @@
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": {{hero}}
+    "layer0.tint": {{green}}
 },
 {
     "class": "mini_quick_panel_row",

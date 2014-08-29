@@ -1,7 +1,7 @@
 
 
 //
-// STANDARD TEXT BUTTONS {{heroDarker1}}
+// STANDARD TEXT BUTTONS 
 //
 
 // Default button state
@@ -18,7 +18,7 @@
 {
     "class": "button_control",
     "attributes": ["hover"],
-    "layer0.tint": {{hero}}
+    "layer0.tint": {{green}}
 },
 {
     "class": "button_control",
@@ -50,8 +50,7 @@
 {
     "class": "button_control",
     "attributes": ["pressed"],
-    "layer0.texture": "",
-    "layer0.tint": {{heroDarker1}}
+    "layer0.opacty": 0
 },
 
 
@@ -76,7 +75,7 @@
 {
     "class": "icon_button_control",
     "attributes": ["hover"],
-    "layer1.tint":{{hero}}
+    "layer1.tint":{{green}}
 },
 {
     "class": "icon_button_control",

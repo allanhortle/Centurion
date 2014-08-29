@@ -1,7 +1,7 @@
 [
 
 //
-// STANDARD TEXT BUTTONS {{heroDarker1}}
+// STANDARD TEXT BUTTONS 
 //
 
 // Default button state
@@ -18,7 +18,7 @@
 {
     "class": "button_control",
     "attributes": ["hover"],
-    "layer0.tint": {{hero}}
+    "layer0.tint": {{green}}
 },
 {
     "class": "button_control",
@@ -50,8 +50,7 @@
 {
     "class": "button_control",
     "attributes": ["pressed"],
-    "layer0.texture": "",
-    "layer0.tint": {{heroDarker1}}
+    "layer0.opacty": 0
 },
 
 
@@ -76,7 +75,7 @@
 {
     "class": "icon_button_control",
     "attributes": ["hover"],
-    "layer1.tint":{{hero}}
+    "layer1.tint":{{green}}
 },
 {
     "class": "icon_button_control",
@@ -275,7 +274,7 @@
 {
     "class": "table_row",
     "layer0.texture": "",
-    "layer0.tint":{{hero}},
+    "layer0.tint":{{green}},
     "layer0.opacity": 0,
     "layer0.inner_margin": [3,1]
 },
@@ -366,7 +365,7 @@
     "class": "quick_panel_row",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": {{hero}}
+    "layer0.tint": {{green}}
 },
 {
     "class": "quick_panel_row",
@@ -428,7 +427,7 @@
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": {{hero}}
+    "layer0.tint": {{green}}
 },
 {
     "class": "mini_quick_panel_row",
@@ -741,7 +740,7 @@
     "class": "disclosure_button_control",
     "content_margin": [8,8],
     "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
-    "layer0.tint": {{hero}},
+    "layer0.tint": {{green}},
     "layer0.opacity": 1,
     "layer0.inner_margin": 0
 },

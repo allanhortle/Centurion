@@ -1,7 +1,7 @@
 [
 
 //
-// STANDARD TEXT BUTTONS [64,140,91]
+// STANDARD TEXT BUTTONS 
 //
 
 // Default button state
@@ -24,7 +24,7 @@
     "class": "button_control",
     "attributes": ["hover"],
     "settings": ["centurion_color_red"],
-    "layer0.tint": [190,90,78]
+    "layer0.tint": [197,91,78]
 },
 {
     "class": "button_control",
@@ -36,13 +36,13 @@
     "class": "button_control",
     "attributes": ["hover"],
     "settings": ["centurion_color_yellow"],
-    "layer0.tint": [218,174,105]
+    "layer0.tint": [225,174,105]
 },
 {
     "class": "button_control",
     "attributes": ["hover"],
     "settings": ["centurion_color_orange"],
-    "layer0.tint": [224,133,90]
+    "layer0.tint": [225,134,90]
 },
 
 
@@ -50,8 +50,7 @@
 {
     "class": "button_control",
     "attributes": ["pressed"],
-    "layer0.texture": "",
-    "layer0.tint": [64,140,91]
+    "layer0.opacty": 0
 },
 
 
@@ -82,7 +81,7 @@
     "class": "icon_button_control",
     "attributes": ["hover"],
     "settings": ["centurion_color_red"],
-    "layer1.tint": [190,90,78]
+    "layer1.tint": [197,91,78]
 },
 {
     "class": "icon_button_control",
@@ -94,13 +93,13 @@
     "class": "icon_button_control",
     "attributes": ["hover"],
     "settings": ["centurion_color_yellow"],
-    "layer1.tint": [218,174,105]
+    "layer1.tint": [225,174,105]
 },
 {
     "class": "icon_button_control",
     "attributes": ["hover"],
     "settings": ["centurion_color_orange"],
-    "layer1.tint": [224,133,90]
+    "layer1.tint": [225,134,90]
 },
 
 
@@ -282,7 +281,7 @@
 {
     "class": "table_row",
     "settings": ["centurion_color_red"],
-    "layer0.tint": [190,90,78]
+    "layer0.tint": [197,91,78]
 },
 {
     "class": "table_row",
@@ -292,12 +291,12 @@
 {
     "class": "table_row",
     "settings": ["centurion_color_yellow"],
-    "layer0.tint": [218,174,105]
+    "layer0.tint": [225,174,105]
 },
 {
     "class": "table_row",
     "settings": ["centurion_color_orange"],
-    "layer0.tint": [224,133,90]
+    "layer0.tint": [225,134,90]
 },
 
 {
@@ -372,7 +371,7 @@
     "class": "quick_panel_row",
     "attributes": ["selected"],
     "settings": ["centurion_color_red"],
-    "layer0.tint": [190,90,78]
+    "layer0.tint": [197,91,78]
 },
 {
     "class": "quick_panel_row",
@@ -384,13 +383,13 @@
     "class": "quick_panel_row",
     "attributes": ["selected"],
     "settings": ["centurion_color_yellow"],
-    "layer0.tint": [218,174,105]
+    "layer0.tint": [225,174,105]
 },
 {
     "class": "quick_panel_row",
     "attributes": ["selected"],
     "settings": ["centurion_color_orange"],
-    "layer0.tint": [224,133,90]
+    "layer0.tint": [225,134,90]
 },
 
 {
@@ -434,7 +433,7 @@
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
     "settings": ["centurion_color_red"],
-    "layer0.tint": [190,90,78]
+    "layer0.tint": [197,91,78]
 },
 {
     "class": "mini_quick_panel_row",
@@ -446,13 +445,13 @@
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
     "settings": ["centurion_color_yellow"],
-    "layer0.tint": [218,174,105]
+    "layer0.tint": [225,174,105]
 },
 {
     "class": "mini_quick_panel_row",
     "attributes": ["selected"],
     "settings": ["centurion_color_orange"],
-    "layer0.tint": [224,133,90]
+    "layer0.tint": [225,134,90]
 },
 //
 // STANDARD SCROLLBARS
@@ -689,7 +688,7 @@
     "layer0.texture": "",
     "layer0.opacity": 0,
     "layer0.inner_margin": 0,
-    "layer0.tint": [190,90,78],
+    "layer0.tint": [197,91,78],
     "content_margin": [8,8]
 },
 {
@@ -748,7 +747,7 @@
 {
     "class": "disclosure_button_control",
     "settings": ["centurion_color_red"],
-    "layer0.tint": [190,90,78]
+    "layer0.tint": [197,91,78]
 },
 {
     "class": "disclosure_button_control",
@@ -758,12 +757,12 @@
 {
     "class": "disclosure_button_control",
     "settings": ["centurion_color_yellow"],
-    "layer0.tint": [218,174,105]
+    "layer0.tint": [225,174,105]
 },
 {
     "class": "disclosure_button_control",
     "settings": ["centurion_color_orange"],
-    "layer0.tint": [224,133,90]
+    "layer0.tint": [225,134,90]
 },
 
 
@@ -880,7 +879,7 @@
     "class": "tab_close_button",
     "parents": [{"class": "tab_control","attributes": ["hover"]}],
     "layer0.opacity": 1,
-    "layer0.tint": [190,90,78]
+    "layer0.tint": [197,91,78]
 
 },
 {

@@ -24,7 +24,7 @@
 {
     "class": "table_row",
     "layer0.texture": "",
-    "layer0.tint":{{hero}},
+    "layer0.tint":{{green}},
     "layer0.opacity": 0,
     "layer0.inner_margin": [3,1]
 },
