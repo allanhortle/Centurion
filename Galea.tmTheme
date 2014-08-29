@@ -68,7 +68,7 @@
 		<!-- Data: json, xml -->
 		<dict>
 			<key>scope</key>
-			<string>text.xml,source.json,source.yaml</string>
+			<string>text.xml,source.json,source.yaml,source.sublime-settings</string>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
@@ -79,7 +79,7 @@
 			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
-			<string>text.xml comment, source.json comment, source.yaml comment </string>
+			<string>text.xml comment, source.json comment, source.yaml comment, source.sublime-settings comment </string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

@@ -6,15 +6,25 @@
 // Status bar container
 {
     "class": "status_bar",
+    "layer0.texture": "",
     "layer0.tint": [50,50,50],
     "layer0.opacity": 1,
-    "layer0.inner_margin": 0,
-    "content_margin": [8,2,8,6]
+    "layer0.inner_margin": [0,0],
+    "content_margin": [8,4,0,4]
+},
+{
+    "class": "status_container",
+    "content_margin": 0,
 },
 // Status bar button
 {
     "class": "status_button",
-    "content_margin": [8,0,0,0]
+    "layer0.tint": [40, 40, 40],
+    "layer0.opacity": 0,
+    "layer0.draw_center": false,
+    "layer0.inner_margin": [1, 0, 0, 0],
+    "content_margin": [8,0],
+    "min_size": [0, 0]
 },
 // Status bar label
 {

@@ -49,6 +49,7 @@
 {
     "class": "panel_control",
     "layer0.inner_margin": [0,0],
+    "layer0.texture": "",
     "layer0.opacity": 1,
     "layer0.tint": [50,50,50],
     "content_margin": 0
