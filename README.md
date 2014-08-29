@@ -53,7 +53,7 @@ _* Side note: if you call your folder something like `AAACenturionRadColor` it m
 ###The actual instructions bit:
 
 1. `cd` into the theme directory.
-2. `npm install` To install the grunt dependancies.3.
+2. `npm install` To install the grunt dependencies.
 3. Open up `Gruntfile.js` and look for `folderName:'Theme - Centurion'`
 4. Just make sure this matches what ever you have named the folder.
 5. Next look for `config.hero = config.green;`
