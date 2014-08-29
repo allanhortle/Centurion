@@ -18,9 +18,34 @@
 {
     "class": "button_control",
     "attributes": ["hover"],
-    "layer0.texture": "",
     "layer0.tint": {{hero}}
 },
+{
+    "class": "button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
+
+
 // Pressed button state
 {
     "class": "button_control",
@@ -53,36 +78,31 @@
     "attributes": ["hover"],
     "layer1.tint":{{hero}}
 },
+{
+    "class": "icon_button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_red"],
+    "layer1.tint": {{red}}
+},
+{
+    "class": "icon_button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_blue"],
+    "layer1.tint": {{blue}}
+},
+{
+    "class": "icon_button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_yellow"],
+    "layer1.tint": {{yellow}}
+},
+{
+    "class": "icon_button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_orange"],
+    "layer1.tint": {{orange}}
+},
 
-// /** Small Icon Buttons **/
-// {
-//     "class": "icon_button_control",
-//     "layer0.texture": "Theme - Default/middle_button.png",
-//     "layer0.inner_margin": [6, 6],
-//     "layer0.opacity": 1.0,
-//     "layer2.texture": "Theme - Default/blue_highlight.png",
-//     "layer2.opacity": { "target": 0.0, "speed": 1.33, "interpolation": "smoothstep" },
-//     "content_margin": [4, 4]
-// },
-// {
-//     "class": "icon_button_control",
-//     "attributes": ["left"],
-//     "layer0.texture": "Theme - Default/left_button.png",
-//     "layer0.opacity": 1.0
-// },
-// {
-//     "class": "icon_button_control",
-//     "attributes": ["right"],
-//     "layer0.texture": "Theme - Default/right_button.png",
-//     "layer0.opacity": 1.0
-// },
-// {
-//     "class": "icon_button_control",
-//     "attributes": ["left", "right"],
-//     "layer0.texture": "Theme - Default/mini_button.png",
-//     "layer0.opacity": 1.0,
-//     "layer0.draw_center": true
-// },
 
 
 //
@@ -247,8 +267,8 @@
 },
 {
     "class": "auto_complete_label",
-    "fg": [210,210,210],
-    "match_fg": {{hero}},
+    "fg": [180,180,180],
+    "match_fg": [255,255,255],
     "selected_fg": [255,255,255],
     "selected_match_fg": [255,255,255]
 },
@@ -259,6 +279,27 @@
     "layer0.opacity": 0,
     "layer0.inner_margin": [3,1]
 },
+{
+    "class": "table_row",
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
+
 {
     "class": "table_row",
     "attributes": ["selected"],
@@ -327,21 +368,45 @@
     "layer0.texture": "",
     "layer0.tint": {{hero}}
 },
+{
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
 
 {
     "class": "quick_panel_label",
-    "fg": [240,240,240],
-    "match_fg": {{hero}},
+    "fg": [180,180,180],
+    "match_fg": [255, 255, 255, 0],
     "selected_fg": [255,255,255],
-    "selected_match_fg": {{heroDarker1}}
+    "selected_match_fg": [80, 80, 80]
 },
 
 {
     "class": "quick_panel_path_label",
     "fg": [130,130,130,0],
     "match_fg": [220,220,220],
-    "selected_fg": {{heroDarker2}},
-    "selected_match_fg": [220,220,220]
+    "selected_fg": [80, 80, 80],
+    "selected_match_fg": [255,255,255]
 },
 {
     "class": "quick_panel_score_label",
@@ -364,6 +429,30 @@
     "attributes": ["selected"],
     "layer0.texture": "",
     "layer0.tint": {{hero}}
+},
+{
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
 },
 //
 // STANDARD SCROLLBARS
@@ -492,7 +581,7 @@
 // Sidebar container
 {
     "class": "sidebar_container",
-    "layer0.texture": "",
+    // "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
     "layer0.opacity": 1,
     "layer0.tint": [30,30,30],
     "layer0.inner_margin": [1,5,2,1],
@@ -542,6 +631,25 @@
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
 },
+
+{
+    "class": "icon_folder",
+    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
+    "content_margin": [0,0]
+},
+
+{
+    "class": "icon_file_type",
+    // "layer0.texture": "{{folderName}}/Centurion/file.png",
+    "layer0.opacity": 1,
+    "layer0.tint": [125,125,125],
+    "content_margin": [8,8]
+},
+
+
+
+
+
 // Sidebar folder entry
 {
     "class": "sidebar_label",
@@ -567,6 +675,9 @@
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
 },
+
+
+
 
 //
 // SIDEBAR - OPEN FILE ICONS
@@ -625,7 +736,7 @@
 // SIDEBAR - GENERAL FILE ICONS
 //
 
-// Sidebar group closed
+// Sidebar group closed Colors
 {
     "class": "disclosure_button_control",
     "content_margin": [8,8],
@@ -636,17 +747,44 @@
 },
 {
     "class": "disclosure_button_control",
-    "parents": [{"class": "tree_row","attributes": ["hover"]}],
-    "layer0.tint":{{heroLighter1}}
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
 },
 {
     "class": "disclosure_button_control",
-    "parents": [{"class": "tree_row","attributes": ["selected"]}]
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
 },
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
+
+
+
+
+
+
+
+{
+    "class": "disclosure_button_control",
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.opacity": 0.8
+},
+// {
+//     "class": "disclosure_button_control",
+//     "parents": [{"class": "tree_row","attributes": ["selected"]}]
+// },
 // Sidebar folder closed
 {
     "class": "disclosure_button_control",
-    "settings": ["soda_folder_icons"],
+    "settings": ["centurion_folder_icons"],
     "layer0.texture": "{{folderName}}/Centurion/folder-closed.png"
 },
 {

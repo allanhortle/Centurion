@@ -18,12 +18,13 @@ module.exports = function(grunt) {
 
 		// Colors used in the theme
 		green:[96,172,123],
-		blue:[90, 138, 165],
+		blue:[108,166,206],
+		
 		red:[190, 90, 78],
 
 		// Extra colors from Galea
 		yellow:[218, 174, 105],
-		orange:[225, 134, 84],
+		orange:[224,133,90],
 
 		/*
 		|--------------------------------------------------------------------------
@@ -70,6 +71,7 @@ module.exports = function(grunt) {
 	config.heroDarker1 = colorChange(config.hero,-32);
 	config.heroDarker2 = colorChange(config.hero,-64);
 	config.heroLighter1 = colorChange(config.hero,32);
+
 
 	// Grunt Config
 	grunt.initConfig({
