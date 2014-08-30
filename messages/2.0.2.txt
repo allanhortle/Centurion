@@ -1,4 +1,4 @@
-Centurion 2.0.1
+Centurion 2.0.3
 ===============
 
 * Fixed folder icons
