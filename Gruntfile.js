@@ -21,6 +21,7 @@ module.exports = function(grunt) {
 		red:[197,91,78],
 		yellow:[225,174,105],
 		orange:[225,134,90],
+		grey:[120,120,120],
 
 		folderName:'Theme - Centurion'
 

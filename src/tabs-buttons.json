@@ -8,12 +8,13 @@
     "class": "tab_close_button",
     "layer0.texture": "{{folderName}}/Centurion/cross.png",
     "layer0.opacity": 0,
+    "content_margin": [8,8],
     "layer0.tint": [255,255,255]
 },
 {
     "class": "tab_close_button",
-    "settings": ["show_tab_close_buttons"],
-    "content_margin": [8,8]
+    "settings": ["centurion_tab_close_buttons"],
+    "layer0.opacity": 0.5,
 },
 {
     "class": "tab_close_button",
@@ -25,7 +26,7 @@
 {
     "class": "tab_close_button",
     "parents": [{"class": "tab_control","attributes": ["selected"]}],
-    "layer0.opacity": 1
+    "layer0.opacity": 1,
 },
 
 // Tab dirty button

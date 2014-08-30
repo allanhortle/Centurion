@@ -58,6 +58,12 @@
     "settings": ["centurion_color_orange"],
     "layer0.tint": {{orange}}
 },
+{
+    "class": "quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
+},
 
 {
     "class": "quick_panel_label",
@@ -119,4 +125,10 @@
     "attributes": ["selected"],
     "settings": ["centurion_color_orange"],
     "layer0.tint": {{orange}}
+},
+{
+    "class": "mini_quick_panel_row",
+    "attributes": ["selected"],
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
 }

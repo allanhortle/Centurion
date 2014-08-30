@@ -9,6 +9,7 @@
     "class": "sidebar_container",
     // "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
     "layer0.opacity": 1,
+    "layer0.tint": [30, 30, 30],
     "layer0.draw_center": false,
     "layer0.inner_margin": [1,5,2,1],
     "content_margin": [0,4,0,0]
@@ -16,13 +17,15 @@
 // Sidebar tree
 {
     "class": "sidebar_tree",
-    "row_padding": [16,4],
-    "layer0.tint": [30, 30, 30],
+    "row_padding": [8,3],
     "indent":16,
-    "indent_offset": 16,
+    "indent_offset": 0,
     "indent_top_level": false,
+    "layer0.tint": [30, 30, 30],
+    "layer0.opacity": 1.0,
     "dark_content": true
 },
+
 // Sidebar rows
 {
     "class": "tree_row",
@@ -59,19 +62,7 @@
     "shadow_offset": [0,0]
 },
 
-{
-    "class": "icon_folder",
-    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
-    "content_margin": [0,0]
-},
 
-{
-    "class": "icon_file_type",
-    // "layer0.texture": "{{folderName}}/Centurion/file.png",
-    "layer0.opacity": 1,
-    "layer0.tint": [125,125,125],
-    "content_margin": [8,8]
-},
 
 
 
@@ -119,7 +110,7 @@
     "layer0.opacity": 0,
     "layer0.inner_margin": 0,
     "layer0.tint": {{red}},
-    "content_margin": [8,8]
+    "content_margin": 0
 },
 {
     "class": "close_button",
@@ -165,13 +156,60 @@
 // SIDEBAR - GENERAL FILE ICONS
 //
 
-// Sidebar group closed Colors
+{
+    "class": "icon_folder",
+    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
+    "content_margin": 8,
+    "layer0.tint": {{green}}
+},
+{
+    "class": "icon_folder",
+    "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
+},
+
+{
+    "class": "icon_file_type",
+    // "layer0.texture": "{{folderName}}/Centurion/file.png",
+    "layer0.opacity": 1,
+    "layer0.tint": [125,125,125],
+    "content_margin": [8,8]
+},
+
+// DISCOSURES
+
 {
     "class": "disclosure_button_control",
-    "content_margin": [8,8],
-    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
+    "layer0.texture": "Theme - Default/arrow_right.png",
+    "layer0.opacity": 0.8,
+    "content_margin": [9, 7, 8, 6],
+    "content_margin": 0,
     "layer0.tint": {{green}},
-    "layer0.opacity": 1,
     "layer0.inner_margin": 0
 },
 {
@@ -194,74 +232,48 @@
     "settings": ["centurion_color_orange"],
     "layer0.tint": {{orange}}
 },
-
-
-
-
-
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
+},
 
 
 {
     "class": "disclosure_button_control",
     "parents": [{"class": "tree_row","attributes": ["hover"]}],
-    "layer0.opacity": 0.8
-},
-// {
-//     "class": "disclosure_button_control",
-//     "parents": [{"class": "tree_row","attributes": ["selected"]}]
-// },
-// Sidebar folder closed
-{
-    "class": "disclosure_button_control",
-    "settings": ["centurion_folder_icons"],
-    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png"
-},
-{
-    "class": "disclosure_button_control",
-    "settings": ["soda_folder_icons"],
-    "parents": [{"class": "tree_row","attributes": ["hover"]}]
-},
-{
-    "class": "disclosure_button_control",
-    "settings": ["soda_folder_icons"],
-    "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png"
-},
-// Sidebar group open
-{
-    "class": "disclosure_button_control",
-    "attributes": ["expanded"],
-    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+    "layer0.opacity": 1
 },
 {
     "class": "disclosure_button_control",
     "attributes": ["expanded"],
-    "parents": [{"class": "tree_row","attributes": ["hover"]}]
+    "layer0.texture": "Theme - Default/arrow_down.png",
 },
 {
     "class": "disclosure_button_control",
-    "attributes": ["expanded"],
-    "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+    "settings": ["centrion_hide_folder_arrows"],
+    "content_margin": 0
 },
-// Sidebar folder open
+
 {
-    "class": "disclosure_button_control",
-    "settings": ["soda_folder_icons"],
-    "attributes": ["expanded"],
-    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
-},
-{
-    "class": "disclosure_button_control",
-    "settings": ["soda_folder_icons"],
-    "attributes": ["expanded"],
-    "parents": [{"class": "tree_row","attributes": ["hover"]}],
-    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
-},
-{
-    "class": "disclosure_button_control",
-    "settings": ["soda_folder_icons"],
-    "attributes": ["expanded"],
-    "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+    "class": "icon_folder_loading",
+    "layer0.texture":
+    {
+        "keyframes":
+        [
+            "Theme - Default/icons/spinner7.png",
+            "Theme - Default/icons/spinner6.png",
+            "Theme - Default/icons/spinner5.png",
+            "Theme - Default/icons/spinner4.png",
+            "Theme - Default/icons/spinner3.png",
+            "Theme - Default/icons/spinner2.png",
+            "Theme - Default/icons/spinner1.png",
+            "Theme - Default/icons/spinner.png",
+        ],
+        "loop": true,
+        "frame_time": 0.075,
+    },
+
+    "layer0.opacity": 1.0,
+    "content_margin": [8, 8]
 }

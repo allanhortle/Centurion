@@ -44,6 +44,12 @@
     "settings": ["centurion_color_orange"],
     "layer0.tint": {{orange}}
 },
+{
+    "class": "button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
+},
 
 
 // Pressed button state
@@ -100,6 +106,12 @@
     "attributes": ["hover"],
     "settings": ["centurion_color_orange"],
     "layer1.tint": {{orange}}
+},
+{
+    "class": "icon_button_control",
+    "attributes": ["hover"],
+    "settings": ["centurion_color_grey"],
+    "layer1.tint": {{grey}}
 },
 
 
