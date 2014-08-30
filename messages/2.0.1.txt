@@ -1,0 +1,15 @@
+Centurion 2.0.1
+===============
+
+* Fixed folder icons
+* Added file and image icons
+* Added the choice of 5 new colors
+* Added settings :
+	"centurion_color_blue"
+	"centurion_color_red"
+	"centurion_color_yellow"
+	"centurion_color_orange"
+	"centurion_color_grey"
+	"centurion_tab_close_buttons"
+	"centurion_tab_scrolling"
+* Removed tab shadows
