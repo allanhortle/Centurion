@@ -1,4 +1,4 @@
-Centurion 2.0.3
+Centurion 2.0.4
 ===============
 
 * Fixed folder icons
@@ -13,3 +13,4 @@ Centurion 2.0.3
 	"centurion_tab_close_buttons"
 	"centurion_tab_scrolling"
 * Removed tab shadows
+* Version Chaos
