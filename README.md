@@ -1,3 +1,8 @@
+## It's broken! 
+
+I'm not even sure what happend. Working on fixing it. The workaround is to just uninstall and then reinstall.
+
+
 Centurion
 =========
 
