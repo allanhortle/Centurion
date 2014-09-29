@@ -71,11 +71,27 @@ module.exports = function(grunt) {
 		    	},
 			},
 		},
+		comments: {
+		    your_target: {
+		          options: {
+		              singleline: true,
+		              multiline: true
+		          },
+		          src: [ 'Centurion.sublime-theme']
+		        }
+		},
+		jsonlint: {
+			validate: {
+				src: [ 'Centurion.sublime-theme' ]
+			}
+		}
 	});
 
 	grunt.registerTask('default', [
 		'concat',
-		'string-replace'
+		'string-replace',
+		'comments',
+		'jsonlint'
 	]);
 };
 

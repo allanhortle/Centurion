@@ -57,7 +57,7 @@
 // tab set scroll left scroll right
 {
     "class": "scroll_tabs_left_button",
-    "content_margin": 0,
+    "content_margin": 0
 },
 {
     "class": "scroll_tabs_left_button",
@@ -67,7 +67,7 @@
 },
 {
     "class": "scroll_tabs_right_button",
-    "content_margin": 0,
+    "content_margin": 0
 },
 {
     "class": "scroll_tabs_right_button",
@@ -78,7 +78,7 @@
 
 {
     "class": "show_tabs_dropdown_button",
-    "content_margin": 0,
+    "content_margin": 0
 },
 {
     "class": "show_tabs_dropdown_button",

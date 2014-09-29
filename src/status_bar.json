@@ -14,7 +14,7 @@
 },
 {
     "class": "status_container",
-    "content_margin": 0,
+    "content_margin": 0
 },
 // Status bar button
 {

@@ -17,11 +17,14 @@
   },
   "homepage": "https://github.com/allanhortle/Centurion",
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-string-replace": "~0.2.7",
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-copy": "~0.5.0",
-    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-uglify": "^0.6.0",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-concat": "~0.3.0"
+    "grunt-jsonlint": "^1.0.4",
+    "grunt-string-replace": "~0.2.7",
+    "grunt-stripcomments": "^0.3.0",
+    "load-grunt-tasks": "~0.2.1"
   }
 }

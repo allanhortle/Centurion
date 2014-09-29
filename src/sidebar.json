@@ -247,7 +247,7 @@
 {
     "class": "disclosure_button_control",
     "attributes": ["expanded"],
-    "layer0.texture": "Theme - Default/arrow_down.png",
+    "layer0.texture": "Theme - Default/arrow_down.png"
 },
 {
     "class": "disclosure_button_control",
@@ -268,10 +268,10 @@
             "Theme - Default/icons/spinner3.png",
             "Theme - Default/icons/spinner2.png",
             "Theme - Default/icons/spinner1.png",
-            "Theme - Default/icons/spinner.png",
+            "Theme - Default/icons/spinner.png"
         ],
         "loop": true,
-        "frame_time": 0.075,
+        "frame_time": 0.075
     },
 
     "layer0.opacity": 1.0,
