@@ -13,7 +13,7 @@
 },
 {
     "class": "tab_close_button",
-    "settings": ["centurion_tab_close_buttons"],
+    "settings": ["show_tab_close_buttons"],
     "layer0.opacity": 0.5
 },
 {
