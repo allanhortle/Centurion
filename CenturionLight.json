@@ -11,7 +11,7 @@
     "min_size": [60,0],
     "layer0.texture": "",
     "layer0.opacity": 1,
-    "layer0.tint": [30,30,30],
+    "layer0.tint": [180,180,180],
     "layer0.inner_margin": [6,6]
 },
 // Hover button state
@@ -67,7 +67,7 @@
 // Button group middle
 {
     "class": "icon_button_control",
-    "layer1.tint":[30,30,30],
+    "layer1.tint":[180,180,180],
     "layer1.opacity":1,
     "content_margin": 7
 },
@@ -75,7 +75,7 @@
     "class": "icon_button_control",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer1.tint":[80,80,80]
+    "layer1.tint":[100,100,100]
 },
 
 {
@@ -270,7 +270,7 @@
 {
     "class": "popup_control",
     "content_margin": [0,0],
-    "layer0.tint": [30,30,30],
+    "layer0.tint": [200,200,200],
     "layer0.opacity": 1
 },
 {
@@ -279,7 +279,7 @@
 },
 {
     "class": "auto_complete_label",
-    "fg": [180,180,180],
+    "fg": [100,100,100],
     "match_fg": [255,255,255],
     "selected_fg": [255,255,255],
     "selected_match_fg": [255,255,255]
@@ -316,36 +316,38 @@
     "settings": ["centurion_color_grey"],
     "layer0.tint": {{grey}}
 },
+
 {
     "class": "table_row",
     "attributes": ["selected"],
     "layer0.opacity": 1
-},
-//
-// FOLD BUTTONS
-//
+}
 
-    {
-        "class": "fold_button_control",
-        "layer0.texture": "{{folderName}}/Centurion/arrow.png",
-        "layer0.opacity": 0.4,
-        "layer0.inner_margin": 0,
-        "content_margin": [8,8]
-    },
-    {
-        "class": "fold_button_control",
-        "attributes": ["hover"],
-        "layer0.opacity": 0.8
-    },
-    {
-        "class": "fold_button_control",
-        "attributes": ["expanded"],
-        "layer0.texture": "{{folderName}}/Centurion/arrow-down.png"
-    },
-    {
-        "class": "fold_button_control",
-        "attributes": ["expanded","hover"]
-    }
+
+,
+// FOLD BUTTONS
+
+{
+    "class": "fold_button_control",
+    "layer0.texture": "{{folderName}}/Centurion/arrow.png",
+    "layer0.opacity": 0.4,
+    "layer0.inner_margin": 0,
+    "content_margin": [8,8]
+},
+{
+    "class": "fold_button_control",
+    "attributes": ["hover"],
+    "layer0.opacity": 0.8
+},
+{
+    "class": "fold_button_control",
+    "attributes": ["expanded"],
+    "layer0.texture": "{{folderName}}/Centurion/arrow-down.png"
+},
+{
+    "class": "fold_button_control",
+    "attributes": ["expanded","hover"]
+}
 ,
 
 
@@ -353,7 +355,7 @@
 {
     "class": "overlay_control",
     "layer0.opacity": 1,
-    "layer1.tint": [50,50,50],
+    "layer1.tint": [200,200,200],
     "layer1.inner_margin": 0,
     "layer1.opacity": 1,
     "content_margin": 0
@@ -366,14 +368,14 @@
 {
     "class": "quick_panel",
     "row_padding": 8,
-    "layer0.tint": [30,30,30],
+    "layer0.tint": [200,200,200],
     "layer0.opacity": 1
     //"dark_content": true
 },
 {
     "class": "quick_panel_row",
     "layer0.texture": "",
-    "layer0.tint": [30,30,30],
+    "layer0.tint": [200,200,200],
     "layer0.inner_margin": 8,
     "layer0.opacity": 1
 },
@@ -416,7 +418,7 @@
 
 {
     "class": "quick_panel_label",
-    "fg": [180,180,180],
+    "fg": [100,100,100],
     "match_fg": [255, 255, 255, 0],
     "selected_fg": [255,255,255],
     "selected_match_fg": [80, 80, 80]
@@ -442,7 +444,7 @@
 {
     "class": "mini_quick_panel_row",
     "layer0.texture": "",
-    "layer0.tint": [30,30,30],
+    "layer0.tint": [200,200,200],
     "layer0.opacity": 1
 },
 {
@@ -486,121 +488,121 @@
 // STANDARD SCROLLBARS
 //
 
-    // Standard vertical scroll bar
-    {
-        "class": "scroll_bar_control",
-        "layer0.texture": "",
-        "layer0.tint":[20,20,20],
-        "layer0.opacity": 1,
-        "layer0.inner_margin": [0,0],
-        "blur": false
-    },
-    // Standard horizontal scroll bar
-    {
-        "class": "scroll_bar_control",
-        "attributes": ["horizontal"],
-        "layer0.texture": "",
-        "layer0.tint":[20,20,20],
-        "layer0.inner_margin": [0,0],
-        "blur": false
-    },
-    // Standard scroll bar corner
-    {
-        "class": "scroll_corner_control",
-        "layer0.texture": "",
-        "layer0.tint":[20,20,20],
-        "layer0.inner_margin": [0,0],
-        "layer0.opacity": 1
-    },
-    // Standard vertical scroll puck
-    {
-        "class": "puck_control",
-        "layer0.texture": "",
-        "layer0.tint":[60,60,60],
-        "layer0.opacity": 1,
-        "layer0.inner_margin": [0,0],
-        "content_margin": [6,0],
-        "blur": false
-    },
-    // Standard horizontal scroll puck
-    {
-        "class": "puck_control",
-        "attributes": ["horizontal"],
-        "layer0.texture": "",
-        "layer0.tint":[60,60,60],
-        "layer0.inner_margin": [0,0],
-        "content_margin": [12,6],
-        "blur": false
-    },
+// Standard vertical scroll bar
+{
+    "class": "scroll_bar_control",
+    "layer0.texture": "",
+    "layer0.tint":[200,200,200],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [0,0],
+    "blur": false
+},
+// Standard horizontal scroll bar
+{
+    "class": "scroll_bar_control",
+    "attributes": ["horizontal"],
+    "layer0.texture": "",
+    "layer0.tint":[200,200,200],
+    "layer0.inner_margin": [0,0],
+    "blur": false
+},
+// Standard scroll bar corner
+{
+    "class": "scroll_corner_control",
+    "layer0.texture": "",
+    "layer0.tint":[200,200,200],
+    "layer0.inner_margin": [0,0],
+    "layer0.opacity": 1
+},
+// Standard vertical scroll puck
+{
+    "class": "puck_control",
+    "layer0.texture": "",
+    "layer0.tint":[240,240,240],
+    "layer0.opacity": 1,
+    "layer0.inner_margin": [0,0],
+    "content_margin": [6,0],
+    "blur": false
+},
+// Standard horizontal scroll puck
+{
+    "class": "puck_control",
+    "attributes": ["horizontal"],
+    "layer0.texture": "",
+    "layer0.tint":[200,200,200],
+    "layer0.inner_margin": [0,0],
+    "content_margin": [12,6],
+    "blur": false
+},
 
 //
 // OVERLAY SCROLLBARS
 //
 
-    // Overlay toggle scroll bar
-    {
-        "class": "scroll_area_control",
-        "settings": ["overlay_scroll_bars"],
-        "overlay": true
-    },
-    {
-        "class": "scroll_area_control",
-        "settings": ["!overlay_scroll_bars"],
-        "overlay": false
-    },
-    // Overlay vertical scroll bar
-    {
-        "class": "scroll_bar_control",
-        "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "",
-        "layer0.tint": [40,40,40],
-        "layer0.inner_margin": 0,
-        "blur": false
-    },
-    // Overlay horizontal scroll bar
-    {
-        "class": "scroll_bar_control",
-        "settings": ["overlay_scroll_bars"],
-        "attributes": ["horizontal"],
-        "layer0.inner_margin": [5,0],
-        "blur": true
-    },
-    // Overlay vertical puck
-    {
-        "class": "puck_control",
-        "settings": ["overlay_scroll_bars"],
-        "layer0.texture": "",
-        "layer0.inner_margin": [0,5],
-        "content_margin": [5,20],
-        "blur": true
-    },
-    // Overlay horizontal puck
-    {
-        "class": "puck_control",
-        "settings": ["overlay_scroll_bars"],
-        "attributes": ["horizontal"],
-        "layer0.texture": "",
-        "layer0.inner_margin": [5,0],
-        "content_margin": [20,5],
-        "blur": true
-    },
-    // Overlay light puck (for dark content)
-    {
-        "class": "puck_control",
-        "settings": ["overlay_scroll_bars"],
-        "attributes": ["dark"],
-        "layer0.texture": "",
-        "layer0.tint": [60,60,60]
+// Overlay toggle scroll bar
+{
+    "class": "scroll_area_control",
+    "settings": ["overlay_scroll_bars"],
+    "overlay": true
+},
+{
+    "class": "scroll_area_control",
+    "settings": ["!overlay_scroll_bars"],
+    "overlay": false
+},
+// Overlay vertical scroll bar
+{
+    "class": "scroll_bar_control",
+    "settings": ["overlay_scroll_bars"],
+    "layer0.texture": "",
+    "layer0.tint": [200,200,200],
+    "layer0.inner_margin": 0,
+    "blur": false
+},
+// Overlay horizontal scroll bar
+{
+    "class": "scroll_bar_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal"],
+    "layer0.inner_margin": [5,0],
+    "blur": true
+},
+// Overlay vertical puck
+{
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "layer0.texture": "",
+    "layer0.inner_margin": [0,5],
+    "content_margin": [5,20],
+    "blur": true
+},
+// Overlay horizontal puck
+{
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal"],
+    "layer0.texture": "",
+    "layer0.inner_margin": [5,0],
+    "content_margin": [20,5],
+    "blur": true
+},
+// Overlay light puck (for dark content)
+{
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["dark"],
+    "layer0.texture": "",
+    "layer0.tint": [200,200,200]
 
-    },
-    // Overlay light horizontal puck (for dark content)
-    {
-        "class": "puck_control",
-        "settings": ["overlay_scroll_bars"],
-        "attributes": ["horizontal","dark"],
-        "layer0.texture": "",
-        "layer0.tint": [60,60,60]
-    },
+},
+// Overlay light horizontal puck (for dark content)
+{
+    "class": "puck_control",
+    "settings": ["overlay_scroll_bars"],
+    "attributes": ["horizontal","dark"],
+    "layer0.texture": "",
+    "layer0.tint": [200,200,200]
+},
 
 
 //
@@ -612,7 +614,7 @@
     "class": "sidebar_container",
     // "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
     "layer0.opacity": 1,
-    "layer0.tint": [30, 30, 30],
+    "layer0.tint": [200, 200, 200],
     "layer0.draw_center": false,
     "layer0.inner_margin": [1,5,2,1],
     "content_margin": [0,4,0,0]
@@ -624,7 +626,7 @@
     "indent":16,
     "indent_offset": 0,
     "indent_top_level": false,
-    "layer0.tint": [30, 30, 30],
+    "layer0.tint": [200, 200, 200],
     "layer0.opacity": 1.0,
     "dark_content": true
 },
@@ -633,7 +635,7 @@
 {
     "class": "tree_row",
     "layer0.texture": "",
-    "layer0.tint": [60,60,60],
+    "layer0.tint": [160,160,160],
     "layer0.opacity": 0,
     "layer0.inner_margin": [1,1]
 },
@@ -646,7 +648,7 @@
 // Sidebar heading
 {
     "class": "sidebar_heading",
-    "color": [210,210,210],
+    "color": [100,100,100],
     "font.bold": true,
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
@@ -660,7 +662,7 @@
 // Sidebar entry
 {
     "class": "sidebar_label",
-    "color": [125,125,125],
+    "color": [100,100,100],
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
 },
@@ -677,12 +679,12 @@
     "parents": [{"class": "tree_row","attributes": ["expandable"]}],
     "font.bold": false,
     "font.italic": false,
-    "color": [190,190,190]
+    "color": [100,100,100]
 },
 {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],    
-    "color": [235,235,235]
+    "color": [40,40,40]
 },
 {
     "class": "sidebar_label",
@@ -694,7 +696,7 @@
 {
     "class": "sidebar_label",
     "parents": [{"class": "tree_row","attributes": ["selected"]}],
-    "color": [210,210,210],
+    "color": [100,100,100],
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
 },
@@ -800,7 +802,7 @@
     "class": "icon_file_type",
     // "layer0.texture": "{{folderName}}/Centurion/file.png",
     "layer0.opacity": 1,
-    "layer0.tint": [125,125,125],
+    "layer0.tint": [110,110,110],
     "content_margin": [8,8]
 },
 
@@ -890,7 +892,7 @@
 {
     "class": "status_bar",
     "layer0.texture": "",
-    "layer0.tint": [50,50,50],
+    "layer0.tint": [200,200,200],
     "layer0.opacity": 1,
     "layer0.inner_margin": [0,0],
     "content_margin": [8,4,0,4]
@@ -1006,18 +1008,18 @@
 {
     "class": "tab_label",
     "fade": true,
-    "fg": [170,170,170],
+    "fg": [100,100,100],
     "shadow_offset": 0
 },
 {
     "class": "tab_label",
     "parents": [{"class": "tab_control","attributes": ["hover"]}],
-    "fg": [200,200,200]
+    "fg": [40,40,40]
 },
 {
     "class": "tab_label",
     "parents": [{"class": "tab_control","attributes": ["selected"]}],
-    "fg": [230,230,230]
+    "fg": [100,100,100]
 },
 //
 // TABS (REGULAR)
@@ -1027,7 +1029,7 @@
 {
     "class": "tabset_control",
     "layer0.texture": "",
-    "layer0.tint": [30,30,30],
+    "layer0.tint": [200,200,200],
     "layer0.inner_margin": 0,
     "layer0.opacity": 1,
     "content_margin": 0,
@@ -1049,7 +1051,7 @@
     "max_margin_trim": 0,
     "hit_test_level": 0,
     "layer0.texture": null,
-    "layer0.tint": [60,60,60],
+    "layer0.tint": [200,200,200],
     "layer0.inner_margin": [5,5],
     "layer0.opacity": 1
 },
@@ -1070,7 +1072,7 @@
     "class": "tab_control",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": [80,80,80]
+    "layer0.tint": [179,179,179]
 },
 
 
@@ -1115,7 +1117,7 @@
 
 {
     "class": "sheet_container_control",
-    "layer0.tint": [20,20,20]
+    "layer0.tint": [200,200,200]
 },
 
 //
@@ -1125,7 +1127,7 @@
 {
     "class": "grid_layout_control",
     "border_size": 1,
-    "border_color": [36,36,36]
+    "border_color": [200,200,200]
 },
 
 //
@@ -1134,7 +1136,7 @@
 
 {
     "class": "minimap_control",
-    "viewport_color": [255,255,255,30]
+    "viewport_color": [0,0,0,30]
 },
 
 //
@@ -1146,7 +1148,7 @@
     "class": "text_line_control",
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [4, 5, 4, 3],
-    "layer0.tint": [30,30,30],
+    "layer0.tint": [180,180,180],
     "content_margin": 8
 },
 
@@ -1160,7 +1162,7 @@
     "layer0.inner_margin": [0,0],
     "layer0.texture": "",
     "layer0.opacity": 1,
-    "layer0.tint": [50,50,50],
+    "layer0.tint": [200,200,200],
     "content_margin": 0
 },
 
@@ -1171,7 +1173,7 @@
 // General labels
 {
     "class": "label_control",
-    "color": [220,220,220]
+    "color": [40,40,40]
 },
 
 // Text field labels
@@ -1194,7 +1196,7 @@
 {
     "class": "tool_tip_control",
     "layer0.texture": "",
-    "layer0.tint": [60,60,60],
+    "layer0.tint": [140,140,140],
     "layer0.inner_margin": [1,1],
     "layer0.opacity": 1,
     "content_margin": [4,4]
@@ -1202,5 +1204,5 @@
 // Tooltip content
 {
     "class": "tool_tip_label_control",
-    "color": [230,230,230]
+    "color": [40,40,40]
 },{"class": "grunt"}]

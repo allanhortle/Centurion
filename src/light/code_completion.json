@@ -1,0 +1,63 @@
+
+
+//
+// CODE COMPLETION DROPDOWN
+//
+
+{
+    "class": "popup_control",
+    "content_margin": [0,0],
+    "layer0.tint": [200,200,200],
+    "layer0.opacity": 1
+},
+{
+    "class": "auto_complete",
+    "row_padding": [4,2]
+},
+{
+    "class": "auto_complete_label",
+    "fg": [100,100,100],
+    "match_fg": [255,255,255],
+    "selected_fg": [255,255,255],
+    "selected_match_fg": [255,255,255]
+},
+{
+    "class": "table_row",
+    "layer0.texture": "",
+    "layer0.tint":{{green}},
+    "layer0.opacity": 0,
+    "layer0.inner_margin": [3,1]
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
+{
+    "class": "table_row",
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
+},
+
+{
+    "class": "table_row",
+    "attributes": ["selected"],
+    "layer0.opacity": 1
+}
+
+

@@ -1,0 +1,51 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+
+# Meta ----------
+name: Centurion Colors
+uuid: 4fd09b3b-24e7-4c7a-9462-85e8f81e470c
+author: Allan Hortle
+colorSpaceName: sRGB
+semanticClass: theme.dark.centurion_colors
+
+settings:
+- settings:
+    background: '#E6E6E6'
+    caret: '#484848'
+    foreground: '#484848'
+    lineHighlight: '#BBB'
+    selection: '#BBB'
+
+
+# Server Side Background & Comments ----------
+- scope: comment
+  settings:
+    foreground: '#999999'
+
+# Constants (Blue) ----------
+- scope: 'blue, constant, keyword.other, support.constant'
+  settings:
+    foreground: '#286c9c'
+
+
+# Strings (Green) ----------
+- scope: 'green, string'
+  settings:
+    foreground: '#327f46'
+
+
+# Entity (Yellow) ----------
+- scope: 'yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call'
+  settings:
+    foreground: '#ac7427'
+
+
+# Storage (orange) ----------
+- scope: 'orange, storage, variable'
+  settings:
+    foreground: '#b14511'
+
+
+# Support & Keyword (Red) ----------
+- scope: 'red, support, keyword.control'
+  settings:
+    foreground: '#bc3d2f'

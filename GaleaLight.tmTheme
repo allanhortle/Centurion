@@ -16,15 +16,15 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#2A2A2A</string>
+				<string>#E6E6E6</string>
 				<key>caret</key>
-				<string>#CCC</string>
+				<string>#484848</string>
 				<key>foreground</key>
-				<string>#CCC</string>
+				<string>#484848</string>
 				<key>lineHighlight</key>
-				<string>#444</string>
+				<string>#BBB</string>
 				<key>selection</key>
-				<string>#444</string>
+				<string>#BBB</string>
 			</dict>
 		</dict>
 		<dict>
@@ -33,47 +33,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#666</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>source.php, source.asp, source.ruby, source.python, source.perl</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#262A2E</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Comment</string>
-			<key>scope</key>
-			<string>source.php comment, source.asp comment, source.ruby comment, source.python comment, source.perl comment</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#555E66</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>text.xml,source.json,source.yaml,source.sublime-settings</string>
-			<key>settings</key>
-			<dict>
-				<key>background</key>
-				<string>#262E29</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Comment</string>
-			<key>scope</key>
-			<string>text.xml comment, source.json comment, source.yaml comment, source.sublime-settings comment</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#55665B</string>
+				<string>#999999</string>
 			</dict>
 		</dict>
 		<dict>
@@ -82,7 +42,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#6CA6CE</string>
+				<string>#286c9c</string>
 			</dict>
 		</dict>
 		<dict>
@@ -91,7 +51,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#86C797</string>
+				<string>#327f46</string>
 			</dict>
 		</dict>
 		<dict>
@@ -100,7 +60,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E1AE69</string>
+				<string>#ac7427</string>
 			</dict>
 		</dict>
 		<dict>
@@ -109,7 +69,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#E1865A</string>
+				<string>#b14511</string>
 			</dict>
 		</dict>
 		<dict>
@@ -118,7 +78,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C55B4E</string>
+				<string>#bc3d2f</string>
 			</dict>
 		</dict>
 	</array>

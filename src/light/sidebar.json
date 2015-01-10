@@ -1,0 +1,279 @@
+
+
+//
+// SIDEBAR
+//
+
+// Sidebar container
+{
+    "class": "sidebar_container",
+    // "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
+    "layer0.opacity": 1,
+    "layer0.tint": [200, 200, 200],
+    "layer0.draw_center": false,
+    "layer0.inner_margin": [1,5,2,1],
+    "content_margin": [0,4,0,0]
+},
+// Sidebar tree
+{
+    "class": "sidebar_tree",
+    "row_padding": [8,3],
+    "indent":16,
+    "indent_offset": 0,
+    "indent_top_level": false,
+    "layer0.tint": [200, 200, 200],
+    "layer0.opacity": 1.0,
+    "dark_content": true
+},
+
+// Sidebar rows
+{
+    "class": "tree_row",
+    "layer0.texture": "",
+    "layer0.tint": [160,160,160],
+    "layer0.opacity": 0,
+    "layer0.inner_margin": [1,1]
+},
+// Sidebar row selected
+{
+    "class": "tree_row",
+    "attributes": ["selected"],
+    "layer0.opacity": 1
+},
+// Sidebar heading
+{
+    "class": "sidebar_heading",
+    "color": [100,100,100],
+    "font.bold": true,
+    "shadow_color": [0,0,0],
+    "shadow_offset": [0,0]
+},
+// Sidebar heading selected
+{
+    "class": "sidebar_heading",
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "shadow_offset": [0,0]
+},
+// Sidebar entry
+{
+    "class": "sidebar_label",
+    "color": [100,100,100],
+    "shadow_color": [0,0,0],
+    "shadow_offset": [0,0]
+},
+
+
+
+
+
+
+
+// Sidebar folder entry
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+    "font.bold": false,
+    "font.italic": false,
+    "color": [100,100,100]
+},
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],    
+    "color": [40,40,40]
+},
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["expandable"]}],
+    "settings": ["bold_folder_labels"],
+    "font.bold": true
+},
+// Sidebar entry selected
+{
+    "class": "sidebar_label",
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "color": [100,100,100],
+    "shadow_color": [0,0,0],
+    "shadow_offset": [0,0]
+},
+
+
+
+
+//
+// SIDEBAR - OPEN FILE ICONS
+//
+
+// Sidebar file close
+{
+    "class": "close_button",
+    "layer0.texture": "",
+    "layer0.opacity": 0,
+    "layer0.inner_margin": 0,
+    "layer0.tint": {{red}},
+    "content_margin": 0
+},
+{
+    "class": "close_button",
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.opacity": 1,
+    "layer0.texture": "{{folderName}}/Centurion/cross.png"
+},
+// Sidebar file dirty
+{
+    "class": "close_button",
+    "attributes": ["dirty"],
+    "layer0.texture": "{{folderName}}/Centurion/circle.png",
+    "layer0.opacity": 1,
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "close_button",
+    "attributes": ["dirty"],
+    "parents": [{"class": "tree_row","attributes": ["selected"]}],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png"
+},
+{
+    "class": "close_button",
+    "attributes": ["dirty"],
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png",
+    "layer0.opacity": 1
+},
+// Sidebar file close hover
+{
+    "class": "close_button",
+    "attributes": ["hover"],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png"
+},
+{
+    "class": "close_button",
+    "parents": [{"class": "tree_row","attributes": ["hover","selected"]}],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png",
+    "layer0.opacity": 1
+},
+
+//
+// SIDEBAR - GENERAL FILE ICONS
+//
+
+{
+    "class": "icon_folder",
+    "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
+    "content_margin": 8,
+    "layer0.tint": {{green}}
+},
+{
+    "class": "icon_folder",
+    "parents": [{ "class": "tree_row", "attributes": ["expanded"] }],
+    "layer0.texture": "{{folderName}}/Centurion/folder-open.png"
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
+{
+    "class": "icon_folder",
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
+},
+
+{
+    "class": "icon_file_type",
+    // "layer0.texture": "{{folderName}}/Centurion/file.png",
+    "layer0.opacity": 1,
+    "layer0.tint": [110,110,110],
+    "content_margin": [8,8]
+},
+
+// DISCOSURES
+
+{
+    "class": "disclosure_button_control",
+    "layer0.texture": "Theme - Default/arrow_right.png",
+    "layer0.opacity": 0.8,
+    "content_margin": [9, 7, 8, 6],
+    "content_margin": 0,
+    "layer0.tint": {{green}},
+    "layer0.inner_margin": 0
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_red"],
+    "layer0.tint": {{red}}
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_blue"],
+    "layer0.tint": {{blue}}
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_yellow"],
+    "layer0.tint": {{yellow}}
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_orange"],
+    "layer0.tint": {{orange}}
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["centurion_color_grey"],
+    "layer0.tint": {{grey}}
+},
+
+
+{
+    "class": "disclosure_button_control",
+    "parents": [{"class": "tree_row","attributes": ["hover"]}],
+    "layer0.opacity": 1
+},
+{
+    "class": "disclosure_button_control",
+    "attributes": ["expanded"],
+    "layer0.texture": "Theme - Default/arrow_down.png"
+},
+{
+    "class": "disclosure_button_control",
+    "settings": ["centrion_hide_folder_arrows"],
+    "content_margin": 0
+},
+
+{
+    "class": "icon_folder_loading",
+    "layer0.texture":
+    {
+        "keyframes":
+        [
+            "Theme - Default/icons/spinner7.png",
+            "Theme - Default/icons/spinner6.png",
+            "Theme - Default/icons/spinner5.png",
+            "Theme - Default/icons/spinner4.png",
+            "Theme - Default/icons/spinner3.png",
+            "Theme - Default/icons/spinner2.png",
+            "Theme - Default/icons/spinner1.png",
+            "Theme - Default/icons/spinner.png"
+        ],
+        "loop": true,
+        "frame_time": 0.075
+    },
+
+    "layer0.opacity": 1.0,
+    "content_margin": [8, 8]
+}

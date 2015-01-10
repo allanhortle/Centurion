@@ -1,0 +1,83 @@
+
+//
+// TAB BUTTONS
+//
+
+// Tab close button
+{
+    "class": "tab_close_button",
+    "layer0.texture": "{{folderName}}/Centurion/cross.png",
+    "layer0.opacity": 0,
+    "content_margin": [8,8],
+    "layer0.tint": [255,255,255]
+},
+{
+    "class": "tab_close_button",
+    "settings": ["centurion_tab_close_buttons"],
+    "layer0.opacity": 0.5
+},
+{
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control","attributes": ["hover"]}],
+    "layer0.opacity": 1,
+    "layer0.tint": {{red}}
+
+},
+{
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control","attributes": ["selected"]}],
+    "layer0.opacity": 1
+},
+
+// Tab dirty button
+{
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control","attributes": ["dirty"]}],
+    "layer0.texture": "{{folderName}}/Centurion/circle.png",
+    "layer0.tint": {{blue}},
+    "layer0.opacity": 1
+},
+{
+    "class": "tab_close_button",
+    "settings": ["!show_tab_close_buttons"],
+    "parents": [{"class": "tab_control","attributes": ["dirty"]}],
+    "content_margin": [8,8],
+    "layer0.opacity": 1
+},
+{
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control","attributes": ["dirty","hover"]}],
+    "layer0.texture": "{{folderName}}/Centurion/cross.png",
+    "layer0.opacity": 1
+},
+{
+    "class": "tab_close_button",
+    "parents": [{"class": "tab_control","attributes": ["dirty","selected"]}]
+},
+
+// Tab highlight button
+{
+    "class": "tab_close_button",
+    "settings": ["highlight_modified_tabs"],
+    "parents": [{"class": "tab_control","attributes": ["dirty"]}]
+},
+{
+    "class": "tab_close_button",
+    "settings": ["highlight_modified_tabs"],
+    "parents": [{"class": "tab_control","attributes": ["dirty","selected"]}]
+},
+
+// Tab close button hover
+{
+    "class": "tab_close_button",
+    "settings": ["show_tab_close_buttons"],
+    "attributes": ["hover"]
+},
+
+// Tab close button pressed
+{
+    "class": "tab_close_button",
+    "settings": ["show_tab_close_buttons"],
+    "attributes": ["pressed"],
+    "layer0.opacity":0.8
+}

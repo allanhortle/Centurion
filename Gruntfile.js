@@ -34,19 +34,23 @@ module.exports = function(grunt) {
 		concat: {
 			options: {
 				banner:'[',
-				footer:',{}]',
-				separator:','
+				footer:',{"class": "grunt"}]',
+				separator:',\n'
 			},
 			dist: {
-				src: ['src/*'],
-				dest: 'Centurion.json',
+				files: {
+					'Centurion.json': ['src/dark/*'],
+					'CenturionLight.json': ['src/light/*']
+				}
 			},
 		},
 		'string-replace': {
 			dist: {
 				files: {
 					'Centurion.sublime-theme':['Centurion.json'],
-					'Centurion/Widget - Centurion.sublime-settings':['settings.json']
+					'CenturionLight.sublime-theme':['CenturionLight.json'],
+					'Centurion/Widget - Centurion.sublime-settings':['settings.json'],
+					'Centurion/Widget - CenturionLight.sublime-settings':['settingsLight.json']
 				},
 				options: {
 					replacements: [{
@@ -65,7 +69,7 @@ module.exports = function(grunt) {
 		watch: {
 			scripts: {
 				files: ['**/*.json'],
-				tasks: ['concat','string-replace'],
+				tasks: ['default'],
 				options: {
 					spawn: false,
 		    	},
@@ -73,12 +77,12 @@ module.exports = function(grunt) {
 		},
 		comments: {
 		    your_target: {
-		          options: {
-		              singleline: true,
-		              multiline: true
-		          },
-		          src: [ 'Centurion.sublime-theme']
-		        }
+		        options: {
+		            singleline: true,
+		            multiline: true
+		        },
+		        src: ['Centurion.sublime-theme','CenturionLight.sublime-theme']
+		    }
 		},
 		jsonlint: {
 			validate: {

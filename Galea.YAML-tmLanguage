@@ -1,0 +1,95 @@
+# [PackageDev] target_format: plist, ext: tmTheme
+
+### Backgrounds ###
+#2A2A2A
+#262E29
+#262A2E
+
+### Foregrounds ###
+#CCC
+#444
+
+### Comments ###
+#666
+#555E66
+#55665B
+
+
+### Colors ###
+#9E7DD3
+#6CA6CE
+#86C797
+#E1AE69
+#E1865A
+#C55B4E
+
+# Meta ----------
+name: Centurion Colors
+uuid: 4fd09b3b-24e7-4c7a-9462-85e8f81e470c
+author: Allan Hortle
+colorSpaceName: sRGB
+semanticClass: theme.dark.centurion_colors
+
+settings:
+- settings:
+    background: '#2A2A2A'
+    caret: '#CCC'
+    foreground: '#CCC'
+    lineHighlight: '#444'
+    selection: '#444'
+
+
+# Server Side Background & Comments ----------
+- scope: comment
+  settings:
+    foreground: '#666'
+
+# Server Side Background & Comments ----------
+- scope: 'source.php, source.asp, source.ruby, source.python, source.perl'
+  settings:
+    background: '#262A2E'
+
+- name: Comment
+  scope: 'source.php comment, source.asp comment, source.ruby comment, source.python comment, source.perl comment'
+  settings:
+    foreground: '#555E66'
+
+# Data File Background & Comments ----------
+- scope: 'text.xml,source.json,source.yaml,source.sublime-settings'
+  settings:
+    background: '#262E29'
+
+- name: Comment
+  scope: 'text.xml comment, source.json comment, source.yaml comment, source.sublime-settings comment'
+  settings:
+    foreground: '#55665B'
+
+
+# Constants (Green) ----------
+- scope: 'blue, constant, keyword.other, support.constant'
+  settings:
+    foreground: '#6CA6CE'
+
+
+# Strings (Green) ----------
+- scope: 'green, string'
+  settings:
+    foreground: '#86C797'
+
+
+# Entity (Yellow) ----------
+- scope: 'yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call'
+  settings:
+    foreground: '#E1AE69'
+
+
+# Storage (orange) ----------
+- scope: 'orange, storage, variable'
+  settings:
+    foreground: '#E1865A'
+
+
+# Support & Keyword (Red) ----------
+- scope: 'red, support, keyword.control'
+  settings:
+    foreground: '#C55B4E'

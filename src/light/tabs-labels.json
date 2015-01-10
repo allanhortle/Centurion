@@ -1,0 +1,20 @@
+//
+// TAB LABELS
+//
+
+{
+    "class": "tab_label",
+    "fade": true,
+    "fg": [100,100,100],
+    "shadow_offset": 0
+},
+{
+    "class": "tab_label",
+    "parents": [{"class": "tab_control","attributes": ["hover"]}],
+    "fg": [40,40,40]
+},
+{
+    "class": "tab_label",
+    "parents": [{"class": "tab_control","attributes": ["selected"]}],
+    "fg": [100,100,100]
+}

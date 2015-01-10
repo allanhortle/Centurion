@@ -53,11 +53,8 @@
     "settings": ["centurion_color_grey"],
     "layer0.tint": {{grey}}
 },
-
 {
     "class": "table_row",
     "attributes": ["selected"],
     "layer0.opacity": 1
 }
-
-
