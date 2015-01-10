@@ -15,6 +15,10 @@ Just install through [Package Control](https://sublime.wbond.net/) and make sure
 
     "theme": "Centurion.sublime-theme"
 
+or 
+
+    "theme": "CenturionLight.sublime-theme"
+
 
 ## Customisation
 
@@ -36,6 +40,9 @@ Centurion has a few settings that you can tweaking that you can apply through yo
 
 
 ## Galea
+
+![Centurion theme](https://raw.github.com/allanhortle/Centurion/master/res/Galea.png)
+
 Centurion now ships with it's own syntax highlighting. Galea is a simple theme designed to cut down on the use of color in conflicting locations. There are only five colors, each relating to a high level Textmate scope.
 
 | Color         | Scope                |
