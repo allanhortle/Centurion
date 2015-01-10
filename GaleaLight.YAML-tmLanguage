@@ -5,7 +5,7 @@ name: Centurion Colors
 uuid: 4fd09b3b-24e7-4c7a-9462-85e8f81e470c
 author: Allan Hortle
 colorSpaceName: sRGB
-semanticClass: theme.dark.centurion_colors
+semanticClass: theme.light.centurion_colors
 
 settings:
 - settings:

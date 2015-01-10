@@ -1,28 +1,5 @@
 # [PackageDev] target_format: plist, ext: tmTheme
 
-### Backgrounds ###
-#2A2A2A
-#262E29
-#262A2E
-
-### Foregrounds ###
-#CCC
-#444
-
-### Comments ###
-#666
-#555E66
-#55665B
-
-
-### Colors ###
-#9E7DD3
-#6CA6CE
-#86C797
-#E1AE69
-#E1865A
-#C55B4E
-
 # Meta ----------
 name: Centurion Colors
 uuid: 4fd09b3b-24e7-4c7a-9462-85e8f81e470c
