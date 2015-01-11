@@ -1,0 +1,15 @@
+Centurion Customisation
+=======================
+
+Don't use all these at once :)
+
+{
+	"theme": "Centurion.sublime-theme",
+	"theme": "CenturionLight.sublime-theme",
+	"centurion_color_blue": true,
+	"centurion_color_red": true,
+	"centurion_color_yellow": true,
+	"centurion_color_orange": true,
+	"centurion_color_grey": true
+}
+

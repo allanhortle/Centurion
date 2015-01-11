@@ -1,6 +1,7 @@
-Centurion 2.1.0
+Centurion 2.1.1
 ===============
 
 * Added a light version of Centurion & Galea
 * Removed empty class name error
 * `show_tab_close_buttons` now actually works in the way it should. Close buttons are on by default now :(
+* Version bumps are not my thing.
