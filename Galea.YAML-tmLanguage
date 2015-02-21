@@ -42,31 +42,40 @@ settings:
     foreground: '#55665B'
 
 
-# Constants (Green) ----------
-- scope: 'blue, constant, keyword.other, support.constant'
+# Constants (blue) ----------
+- scope: 'blue, constant, keyword.other, support.constant, markup.quote'
   settings:
     foreground: '#6CA6CE'
 
 
 # Strings (Green) ----------
-- scope: 'green, string'
+- scope: 'green, string, markup.list, markup.underline'
   settings:
     foreground: '#86C797'
 
 
 # Entity (Yellow) ----------
-- scope: 'yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call'
+- scope: 'yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call, markup.heading'
   settings:
     foreground: '#E1AE69'
 
 
 # Storage (orange) ----------
-- scope: 'orange, storage, variable'
+- scope: 'orange, storage, variable, markup.italic'
   settings:
     foreground: '#E1865A'
 
 
 # Support & Keyword (Red) ----------
-- scope: 'red, support, keyword.control'
+- scope: 'red, support, keyword.control, markup.bold'
   settings:
     foreground: '#C55B4E'
+
+- scope: 'markup.italic'
+  settings:
+    fontStyle: italic
+
+- scope: 'markup.bold'
+  settings:
+    fontStyle: bold
+

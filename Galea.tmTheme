@@ -78,7 +78,7 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>blue, constant, keyword.other, support.constant</string>
+			<string>blue, constant, keyword.other, support.constant, markup.quote</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -87,7 +87,7 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>green, string</string>
+			<string>green, string, markup.list, markup.underline</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -96,7 +96,7 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call</string>
+			<string>yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call, markup.heading</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -105,7 +105,7 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>orange, storage, variable</string>
+			<string>orange, storage, variable, markup.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -114,11 +114,29 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>red, support, keyword.control</string>
+			<string>red, support, keyword.control, markup.bold</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
 				<string>#C55B4E</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>markup.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>italic</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>scope</key>
+			<string>markup.bold</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
 			</dict>
 		</dict>
 	</array>
