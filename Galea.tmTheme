@@ -87,7 +87,7 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>green, string, markup.list, markup.underline</string>
+			<string>green, string.quoted, markup.list, markup.underline</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -105,7 +105,7 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>orange, storage, variable, markup.italic</string>
+			<string>orange, storage, variable.language, markup.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -114,7 +114,7 @@
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>red, support, keyword.control, markup.bold</string>
+			<string>red, support, keyword.control, keyword.operator.module, markup.bold</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
