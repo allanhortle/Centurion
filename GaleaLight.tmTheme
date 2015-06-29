@@ -7,78 +7,108 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>name</key>
-	<string>Centurion Colors</string>
+	<string>Galea Light</string>
 	<key>semanticClass</key>
-	<string>theme.dark.centurion_colors</string>
+	<string>theme.light.galea</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#E6E6E6</string>
-				<key>caret</key>
-				<string>#484848</string>
+				<string>#e6e6e6</string>
 				<key>foreground</key>
-				<string>#484848</string>
+				<string>#666</string>
 				<key>lineHighlight</key>
-				<string>#BBB</string>
+				<string>#aaa</string>
 				<key>selection</key>
-				<string>#BBB</string>
+				<string>#fff</string>
+				<key>selectionBorder</key>
+				<string>#fff</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Comment</string>
+			<key>scope</key>
+			<string>comment, meta.diff.header, meta.diff.range</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#888</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Constants (Blue)</string>
+			<key>scope</key>
+			<string>blue, constant.numeric, constant.language, keyword.other, support.constant, markup.quote</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#6CA6CE</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Strings (Green)</string>
+			<key>scope</key>
+			<string>green, string.quoted, markup.list, markup.underline, markup.inserted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#86C797</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Entity (Yellow)</string>
+			<key>scope</key>
+			<string>yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call, markup.heading, markup.changed</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E1AE69</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Storage (Orange)</string>
+			<key>scope</key>
+			<string>orange, storage, variable.language, markup.italic</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#E1865A</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Support &amp; Keyword (Red)</string>
+			<key>scope</key>
+			<string>red, support, keyword.control, keyword.operator.module, markup.bold, markup.deleted</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#C55B4E</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>comment</string>
+			<string>markup.italic</string>
 			<key>settings</key>
 			<dict>
-				<key>foreground</key>
-				<string>#999999</string>
+				<key>fontStyle</key>
+				<string>italic</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>scope</key>
-			<string>blue, constant, keyword.other, support.constant</string>
+			<string>markup.bold</string>
 			<key>settings</key>
 			<dict>
-				<key>foreground</key>
-				<string>#286c9c</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>green, string</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#327f46</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#ac7427</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>orange, storage, variable</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#b14511</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>scope</key>
-			<string>red, support, keyword.control</string>
-			<key>settings</key>
-			<dict>
-				<key>foreground</key>
-				<string>#bc3d2f</string>
+				<key>fontStyle</key>
+				<string>bold</string>
 			</dict>
 		</dict>
 	</array>

@@ -1,51 +1,53 @@
 # [PackageDev] target_format: plist, ext: tmTheme
-
-# Meta ----------
-name: Centurion Colors
+name: Galea Light
 uuid: 4fd09b3b-24e7-4c7a-9462-85e8f81e470c
 author: Allan Hortle
 colorSpaceName: sRGB
-semanticClass: theme.light.centurion_colors
+semanticClass: theme.light.galea
 
 settings:
 - settings:
-    background: '#E6E6E6'
-    caret: '#484848'
-    foreground: '#484848'
-    lineHighlight: '#BBB'
-    selection: '#BBB'
+    background: '#e6e6e6'
+    foreground: '#666'
+    selection: '#fff'
+    lineHighlight: '#aaa'
+    selectionBorder: '#fff'
 
-
-# Server Side Background & Comments ----------
-- scope: comment
+- name: Comment
+  scope: comment, meta.diff.header, meta.diff.range
   settings:
-    foreground: '#999999'
+    foreground: '#888'
 
-# Constants (Blue) ----------
-- scope: 'blue, constant, keyword.other, support.constant'
+- name: Constants (Blue)
+  scope: 'blue, constant.numeric, constant.language, keyword.other, support.constant, markup.quote'
   settings:
-    foreground: '#286c9c'
+    foreground: '#6CA6CE'
 
-
-# Strings (Green) ----------
-- scope: 'green, string'
+- name: Strings (Green)
+  scope: 'green, string.quoted, markup.list, markup.underline, markup.inserted'
   settings:
-    foreground: '#327f46'
+    foreground: '#86C797'
 
-
-# Entity (Yellow) ----------
-- scope: 'yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call'
+- name: Entity (Yellow)
+  scope: 'yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call, markup.heading, markup.changed'
   settings:
-    foreground: '#ac7427'
+    foreground: '#E1AE69'
 
-
-# Storage (orange) ----------
-- scope: 'orange, storage, variable'
+- name: Storage (Orange)
+  scope: 'orange, storage, variable.language, markup.italic'
   settings:
-    foreground: '#b14511'
+    foreground: '#E1865A'
 
-
-# Support & Keyword (Red) ----------
-- scope: 'red, support, keyword.control'
+- name: Support & Keyword (Red)
+  scope: 'red, support, keyword.control, keyword.operator.module, markup.bold, markup.deleted'
   settings:
-    foreground: '#bc3d2f'
+    foreground: '#C55B4E'
+
+# Markdown
+- scope: markup.italic
+  settings:
+    fontStyle: italic
+
+- scope: markup.bold
+  settings:
+    fontStyle: bold

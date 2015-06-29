@@ -7,24 +7,24 @@
 	<key>colorSpaceName</key>
 	<string>sRGB</string>
 	<key>name</key>
-	<string>Galea</string>
+	<string>Galea Light</string>
 	<key>semanticClass</key>
-	<string>theme.dark.galea</string>
+	<string>theme.light.galea</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#2A2A2A</string>
+				<string>#E6E6E6</string>
 				<key>caret</key>
-				<string>#CCC</string>
+				<string>#484848</string>
 				<key>foreground</key>
-				<string>#CCC</string>
+				<string>#484848</string>
 				<key>lineHighlight</key>
-				<string>#444</string>
+				<string>#BBB</string>
 				<key>selection</key>
-				<string>#444</string>
+				<string>#BBB</string>
 			</dict>
 		</dict>
 		<dict>
