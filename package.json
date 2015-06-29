@@ -1,6 +1,6 @@
 {
   "name": "Centurion",
-  "version": "2.1.2",
+  "version": "2.2.0",
   "description": "Sublime Text Theme",
   "main": "index.js",
   "repository": {
@@ -26,5 +26,6 @@
     "grunt-string-replace": "~0.2.7",
     "grunt-stripcomments": "^0.3.0",
     "load-grunt-tasks": "~0.2.1"
-  }
+  },
+  "scripts": {}
 }
