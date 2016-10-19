@@ -11,14 +11,21 @@ Centurion was made out of a want for less UI and more code. It's so minimal you 
 
 ## Installation
 
-Just install through [Package Control](https://sublime.wbond.net/) and make sure to update your `Settings - User` file with:
+Just install through [Package Control](https://sublime.wbond.net/) and make sure to update the theme in your `Settings - User` file with:
 
     "theme": "Centurion.sublime-theme"
 
-or 
+or
 
     "theme": "CenturionLight.sublime-theme"
 
+To update the syntax hightlighting using [Galea](#galea) make sure you add following lines into your `Settings - User` file:
+
+    "color_scheme": "Packages/Theme - Centurion/Galea.tmTheme"
+
+or
+
+    "color_scheme": "Packages/Theme - Centurion/GaleaLight.tmTheme"
 
 ## Customisation
 
@@ -43,7 +50,7 @@ Centurion has a few settings that you can tweaking that you can apply through yo
 
 ![Centurion theme](https://raw.github.com/allanhortle/Centurion/master/res/Galea.png)
 
-Centurion now ships with it's own syntax highlighting. Galea is a simple theme designed to cut down on the use of color in conflicting locations. There are only five colors, each relating to a high level Textmate scope.
+Centurion now ships with its own syntax highlighting. Galea is a simple theme designed to cut down on the use of color in conflicting locations. There are only five colors, each relating to a high level Textmate scope.
 
 | Color         | Scope                |
 | ------------- |----------------------|
