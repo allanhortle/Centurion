@@ -42,7 +42,7 @@
 			<key>name</key>
 			<string>Constants (Blue)</string>
 			<key>scope</key>
-			<string>blue, constant.numeric, constant.language, keyword.other, support.constant, markup.quote</string>
+			<string>blue, constant, markup.quote</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -53,7 +53,7 @@
 			<key>name</key>
 			<string>Strings (Green)</string>
 			<key>scope</key>
-			<string>green, string.quoted, markup.list, markup.underline, markup.inserted</string>
+			<string>green, string, markup.list, markup.underline, markup.inserted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -62,9 +62,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Entity (Yellow)</string>
+			<string>Meta / Tags (Yellow)</string>
 			<key>scope</key>
-			<string>yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call, markup.heading, markup.changed</string>
+			<string>yellow, entity.name.tag, meta.tag, markup.heading, markup.changed</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -73,9 +73,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Storage (Orange)</string>
+			<string>Entity Storage (Orange)</string>
 			<key>scope</key>
-			<string>orange, storage, variable.language, markup.italic</string>
+			<string>orange, storage, entity, markup.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -86,7 +86,7 @@
 			<key>name</key>
 			<string>Support &amp; Keyword (Red)</string>
 			<key>scope</key>
-			<string>red, support, keyword.control, keyword.operator.module, markup.bold, markup.deleted</string>
+			<string>red, keyword.control, keyword.other, markup.bold, markup.deleted</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

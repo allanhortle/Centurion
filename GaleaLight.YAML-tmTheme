@@ -4,50 +4,47 @@ uuid: 4fd09b3b-24e7-4c7a-9462-85e8f81e470c
 author: Allan Hortle
 colorSpaceName: sRGB
 semanticClass: theme.light.galea
-
 settings:
 - settings:
     background: '#e6e6e6'
     foreground: '#666'
-    selection: '#fff'
     lineHighlight: '#aaa'
+    selection: '#fff'
     selectionBorder: '#fff'
-
 - name: Comment
   scope: comment, meta.diff.header, meta.diff.range
   settings:
     foreground: '#888'
 
 - name: Constants (Blue)
-  scope: 'blue, constant.numeric, constant.language, keyword.other, support.constant, markup.quote'
+  scope: blue, constant.numeric, constant.language, keyword.other, support.constant,
+    markup.quote
   settings:
     foreground: '#6CA6CE'
 
 - name: Strings (Green)
-  scope: 'green, string.quoted, markup.list, markup.underline, markup.inserted'
+  scope: green, string.quoted, markup.list, markup.underline, markup.inserted
   settings:
     foreground: '#86C797'
 
 - name: Entity (Yellow)
-  scope: 'yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call, markup.heading, markup.changed'
+  scope: yellow, entity, meta.tag, punctuation.definition.tag, meta.function-call,
+    markup.heading, markup.changed
   settings:
     foreground: '#E1AE69'
 
 - name: Storage (Orange)
-  scope: 'orange, storage, variable.language, markup.italic'
+  scope: orange, storage, variable.language, markup.italic
   settings:
     foreground: '#E1865A'
 
 - name: Support & Keyword (Red)
-  scope: 'red, support, keyword.control, keyword.operator.module, markup.bold, markup.deleted'
+  scope: red, support, keyword.control, keyword.operator.module, markup.bold, markup.deleted
   settings:
     foreground: '#C55B4E'
-
-# Markdown
 - scope: markup.italic
   settings:
     fontStyle: italic
-
 - scope: markup.bold
   settings:
     fontStyle: bold
