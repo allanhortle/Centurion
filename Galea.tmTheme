@@ -64,7 +64,7 @@
 			<key>name</key>
 			<string>Meta / Tags (Yellow)</string>
 			<key>scope</key>
-			<string>yellow, entity.name.tag, meta.tag, markup.heading, markup.changed</string>
+			<string>yellow, entity.name.tag, entity.other, meta.tag, markup.heading, markup.changed</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -75,7 +75,7 @@
 			<key>name</key>
 			<string>Entity Storage (Orange)</string>
 			<key>scope</key>
-			<string>orange, storage, entity, markup.italic</string>
+			<string>orange, storage, entity.name, markup.italic</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

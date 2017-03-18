@@ -28,12 +28,12 @@ settings:
     foreground: '#86C797'
 
 - name: Meta / Tags (Yellow)
-  scope: yellow, entity.name.tag, meta.tag, markup.heading, markup.changed
+  scope: yellow, entity.name.tag, entity.other, meta.tag, markup.heading, markup.changed
   settings:
     foreground: '#E1AE69'
 
 - name: Entity Storage (Orange)
-  scope: orange, storage, entity, markup.italic
+  scope: orange, storage, entity.name, markup.italic
   settings:
     foreground: '#E1865A'
 
