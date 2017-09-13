@@ -42,7 +42,7 @@
 			<key>name</key>
 			<string>Constants (Blue)</string>
 			<key>scope</key>
-			<string>blue, constant, markup.quote</string>
+			<string>blue, constant, support.constant, markup.quote, keyword.other.unit</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
@@ -86,7 +86,7 @@
 			<key>name</key>
 			<string>Support &amp; Keyword (Red)</string>
 			<key>scope</key>
-			<string>red, keyword.control, keyword.other, markup.bold, markup.deleted</string>
+			<string>red, support, keyword.control, keyword.other, markup.bold, markup.deleted, support.type.property-name</string>
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>

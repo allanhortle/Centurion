@@ -78,7 +78,7 @@
 },
 {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],    
+    "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
     "color": [235,235,235]
 },
 {

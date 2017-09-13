@@ -18,7 +18,7 @@ settings:
     foreground: '#666'
 
 - name: Constants (Blue)
-  scope: blue, constant, markup.quote
+  scope: blue, constant, support.constant, markup.quote
   settings:
     foreground: '#6CA6CE'
 
@@ -38,7 +38,7 @@ settings:
     foreground: '#E1865A'
 
 - name: Support & Keyword (Red)
-  scope: red, keyword.control, keyword.other, markup.bold, markup.deleted
+  scope: red, support, keyword.control, keyword.other, markup.bold, markup.deleted
   settings:
     foreground: '#C55B4E'
 - scope: markup.italic

@@ -1,6 +1,32 @@
 
 
 //
+// Title
+
+{
+    "class": "title_bar",
+    "fg": ["background", 255, 255, 255, 0.7],
+    "bg": ["background", 30, 30, 30, 1.0]
+},
+// {
+//     "class": "title_bar",
+//     "attributes": ["file_dark"],
+//     "bg": ["background", 255, 255, 255, 0.15]
+// },
+// {
+//     "class": "title_bar",
+//     "attributes": ["file_medium"],
+//     "bg": ["background", 0, 0, 0, 0.2]
+// },
+// {
+//     "class": "title_bar",
+//     "attributes": ["file_light"],
+//     "fg": ["background", 0, 0, 0, 0.7],
+//     "bg": ["background", 0, 0, 0, 0.1]
+// },
+
+
+//
 // EMPTY WINDOW BACKGROUND
 //
 

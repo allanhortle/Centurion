@@ -1109,7 +1109,14 @@
     "content_margin": [9, 7, 8, 6],
     "layer0.opacity": 1
 },
+//
+// Title
 
+{
+    "class": "title_bar",
+    "fg": ["background", 40,40,40, 1.0],
+    "bg": ["background", 200, 200, 200, 1.0]
+},
 
 //
 // EMPTY WINDOW BACKGROUND
@@ -1205,4 +1212,5 @@
 {
     "class": "tool_tip_label_control",
     "color": [40,40,40]
-},{"class": "grunt"}]
+}
+,{"class": "grunt"}]

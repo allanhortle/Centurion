@@ -348,7 +348,6 @@
     }
 ,
 
-
 // Quick panel background
 {
     "class": "overlay_control",
@@ -480,7 +479,8 @@
     "attributes": ["selected"],
     "settings": ["centurion_color_grey"],
     "layer0.tint": {{grey}}
-},
+}
+,
 
 //
 // STANDARD SCROLLBARS
@@ -681,7 +681,7 @@
 },
 {
     "class": "sidebar_label",
-    "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],    
+    "parents": [{"class": "tree_row","attributes": ["expandable","hover"]}],
     "color": [235,235,235]
 },
 {
@@ -917,6 +917,24 @@
     "shadow_offset": [0,0]
 },
 
+
+//
+// Panel Close
+{
+    "class": "panel_close_button",
+    "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
+},
+{
+    "class": "panel_close_button",
+    "layer0.tint": ["background", 255, 255, 255, 1.0]
+},
+{
+    "class": "panel_close_button",
+    "attributes": ["hover"],
+    "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
+}
+,
+
 //
 // TAB BUTTONS
 //
@@ -1049,7 +1067,7 @@
     "max_margin_trim": 0,
     "hit_test_level": 0,
     "layer0.texture": null,
-    "layer0.tint": [60,60,60],
+    "layer0.tint": [30,30,30],
     "layer0.inner_margin": [5,5],
     "layer0.opacity": 1
 },
@@ -1070,8 +1088,13 @@
     "class": "tab_control",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": [80,80,80]
+    "layer0.tint": [60,60,60]
 },
+
+// {
+//     "class": "tab_label",
+//     "font.face": "Menlo"
+// },
 
 
 
@@ -1106,7 +1129,34 @@
     "settings": ["centurion_tab_scrolling"],
     "content_margin": [9, 7, 8, 6],
     "layer0.opacity": 1
+}
+,
+
+
+//
+// Title
+
+{
+    "class": "title_bar",
+    "fg": ["background", 255, 255, 255, 0.7],
+    "bg": ["background", 30, 30, 30, 1.0]
 },
+// {
+//     "class": "title_bar",
+//     "attributes": ["file_dark"],
+//     "bg": ["background", 255, 255, 255, 0.15]
+// },
+// {
+//     "class": "title_bar",
+//     "attributes": ["file_medium"],
+//     "bg": ["background", 0, 0, 0, 0.2]
+// },
+// {
+//     "class": "title_bar",
+//     "attributes": ["file_light"],
+//     "fg": ["background", 0, 0, 0, 0.7],
+//     "bg": ["background", 0, 0, 0, 0.1]
+// },
 
 
 //
@@ -1203,4 +1253,5 @@
 {
     "class": "tool_tip_label_control",
     "color": [230,230,230]
-},{"class": "grunt"}]
+}
+,{"class": "grunt"}]

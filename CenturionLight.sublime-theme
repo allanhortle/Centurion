@@ -937,6 +937,12 @@
 },
 
 {
+    "class": "title_bar",
+    "fg": ["background", 40,40,40, 1.0],
+    "bg": ["background", 200, 200, 200, 1.0]
+},
+
+{
     "class": "sheet_container_control",
     "layer0.tint": [200,200,200]
 },
@@ -989,4 +995,5 @@
 {
     "class": "tool_tip_label_control",
     "color": [40,40,40]
-},{"class": "grunt"}]
+}
+,{"class": "grunt"}]
