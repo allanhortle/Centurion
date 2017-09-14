@@ -1,0 +1,4 @@
+Centurion 2.3.0
+===============
+
+* Added adaptive menu bar styling

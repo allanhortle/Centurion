@@ -1156,6 +1156,7 @@
     "layer0.opacity": 1.0,
     "layer0.inner_margin": [4, 5, 4, 3],
     "layer0.tint": [180,180,180],
+    "font.face": "{{fontface}}",
     "content_margin": 8
 },
 

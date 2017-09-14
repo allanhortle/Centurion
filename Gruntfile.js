@@ -17,11 +17,12 @@ module.exports = function(grunt) {
 	var config = {
 
 		green:[96,172,123],
-		blue:[108,166,206],		
+		blue:[108,166,206],
 		red:[197,91,78],
 		yellow:[225,174,105],
 		orange:[225,134,90],
-		grey:[120,120,120],
+    grey:[120,120,120],
+		fontface: "Menlo",
 
 		folderName:'Theme - Centurion'
 

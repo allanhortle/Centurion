@@ -52,10 +52,17 @@
     "layer0.tint": [60,60,60]
 },
 
-// {
-//     "class": "tab_label",
-//     "font.face": "Menlo"
-// },
+{
+    "class": "tab_label",
+    "font.face": "{{fontface}}",
+    "fg": ["hsl", 0, 0, 50]
+},
+
+{
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "fg": ["hsl", 0, 0, 90]
+},
 
 
 

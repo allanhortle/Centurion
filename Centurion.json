@@ -1,7 +1,7 @@
 [
 
 //
-// STANDARD TEXT BUTTONS 
+// STANDARD TEXT BUTTONS
 //
 
 // Default button state
@@ -260,7 +260,8 @@
     "class": "icon_highlight",
     "parents": [{"class": "icon_button_control","attributes": ["selected"]}],
     "layer0.opacity": 1
-},
+}
+,
 
 
 //
@@ -320,7 +321,8 @@
     "class": "table_row",
     "attributes": ["selected"],
     "layer0.opacity": 1
-},
+}
+,
 //
 // FOLD BUTTONS
 //
@@ -364,7 +366,7 @@
 
 {
     "class": "quick_panel",
-    "row_padding": 8,
+    "row_padding": 16,
     "layer0.tint": [30,30,30],
     "layer0.opacity": 1
     //"dark_content": true
@@ -415,6 +417,7 @@
 
 {
     "class": "quick_panel_label",
+    "font.face": "{{fontface}}",
     "fg": [180,180,180],
     "match_fg": [255, 255, 255, 0],
     "selected_fg": [255,255,255],
@@ -423,6 +426,7 @@
 
 {
     "class": "quick_panel_path_label",
+    "font.face": "{{fontface}}",
     "fg": [130,130,130,0],
     "match_fg": [220,220,220],
     "selected_fg": [80, 80, 80],
@@ -430,6 +434,7 @@
 },
 {
     "class": "quick_panel_score_label",
+    "font.face": "{{fontface}}",
     "fg": [150,150,150],
     "selected_fg": [255,255,255]
 },
@@ -648,6 +653,7 @@
     "class": "sidebar_heading",
     "color": [210,210,210],
     "font.bold": true,
+    "font.face": "{{fontface}}",
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
 },
@@ -660,6 +666,8 @@
 // Sidebar entry
 {
     "class": "sidebar_label",
+    "font.face": "{{fontface}}",
+    "font.size": 11,
     "color": [125,125,125],
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
@@ -763,7 +771,8 @@
     "class": "icon_folder",
     "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
     "content_margin": 8,
-    "layer0.tint": {{green}}
+    "layer0.tint": {{green}},
+    "layer0.opacity": 1.0
 },
 {
     "class": "icon_folder",
@@ -799,7 +808,7 @@
 {
     "class": "icon_file_type",
     // "layer0.texture": "{{folderName}}/Centurion/file.png",
-    "layer0.opacity": 1,
+    "layer0.opacity": 1.0,
     "layer0.tint": [125,125,125],
     "content_margin": [8,8]
 },
@@ -912,6 +921,7 @@
 // Status bar label
 {
     "class": "label_control",
+    "font.face": "{{fontface}}",
     "parents": [{"class": "status_bar"}],
     "color": [150,150,150],
     "shadow_offset": [0,0]
@@ -1091,10 +1101,17 @@
     "layer0.tint": [60,60,60]
 },
 
-// {
-//     "class": "tab_label",
-//     "font.face": "Menlo"
-// },
+{
+    "class": "tab_label",
+    "font.face": "{{fontface}}",
+    "fg": ["hsl", 0, 0, 50]
+},
+
+{
+    "class": "tab_label",
+    "parents": [{"class": "tab_control", "attributes": ["selected"]}],
+    "fg": ["hsl", 0, 0, 90]
+},
 
 
 
@@ -1164,6 +1181,9 @@
 //
 
 {
+    "class": "window"
+},
+{
     "class": "sheet_container_control",
     "layer0.tint": [20,20,20]
 },
@@ -1175,7 +1195,7 @@
 {
     "class": "grid_layout_control",
     "border_size": 1,
-    "border_color": [36,36,36]
+    "border_color": [0,0,0]
 },
 
 //
@@ -1221,6 +1241,12 @@
 // General labels
 {
     "class": "label_control",
+    "font.face": "{{fontface}}",
+    "color": [220,220,220]
+},
+{
+    "class": "title_label_control",
+    "font.face": "{{fontface}}",
     "color": [220,220,220]
 },
 
@@ -1252,6 +1278,7 @@
 // Tooltip content
 {
     "class": "tool_tip_label_control",
+    "font.face": "{{fontface}}",
     "color": [230,230,230]
 }
 ,{"class": "grunt"}]

@@ -31,6 +31,9 @@
 //
 
 {
+    "class": "window"
+},
+{
     "class": "sheet_container_control",
     "layer0.tint": [20,20,20]
 },
@@ -42,7 +45,7 @@
 {
     "class": "grid_layout_control",
     "border_size": 1,
-    "border_color": [36,36,36]
+    "border_color": [0,0,0]
 },
 
 //
@@ -88,6 +91,12 @@
 // General labels
 {
     "class": "label_control",
+    "font.face": "{{fontface}}",
+    "color": [220,220,220]
+},
+{
+    "class": "title_label_control",
+    "font.face": "{{fontface}}",
     "color": [220,220,220]
 },
 
@@ -119,5 +128,6 @@
 // Tooltip content
 {
     "class": "tool_tip_label_control",
+    "font.face": "{{fontface}}",
     "color": [230,230,230]
 }

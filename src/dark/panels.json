@@ -15,7 +15,7 @@
 
 {
     "class": "quick_panel",
-    "row_padding": 8,
+    "row_padding": 16,
     "layer0.tint": [30,30,30],
     "layer0.opacity": 1
     //"dark_content": true
@@ -66,6 +66,7 @@
 
 {
     "class": "quick_panel_label",
+    "font.face": "{{fontface}}",
     "fg": [180,180,180],
     "match_fg": [255, 255, 255, 0],
     "selected_fg": [255,255,255],
@@ -74,6 +75,7 @@
 
 {
     "class": "quick_panel_path_label",
+    "font.face": "{{fontface}}",
     "fg": [130,130,130,0],
     "match_fg": [220,220,220],
     "selected_fg": [80, 80, 80],
@@ -81,6 +83,7 @@
 },
 {
     "class": "quick_panel_score_label",
+    "font.face": "{{fontface}}",
     "fg": [150,150,150],
     "selected_fg": [255,255,255]
 },
