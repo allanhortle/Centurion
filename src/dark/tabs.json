@@ -6,14 +6,15 @@
 {
     "class": "tabset_control",
     "layer0.texture": "",
-    "layer0.tint": [30,30,30],
-    "layer0.inner_margin": 0,
+    // "layer0.tint": [30,30,30],
+    "layer0.tint": ["background", 0, 0, 0, 0.4],
+    "layer0.inner_margin": [10, 0],
     "layer0.opacity": 1,
-    "content_margin": 0,
+    "content_margin": [0, 8, 0, 0],
     "tab_overlap":0,
     "tab_width": 180,
     "tab_min_width": 45,
-    "tab_height": 28,
+    "tab_height": 32,
     "mouse_wheel_switch": false
 },
 {
@@ -24,11 +25,11 @@
 // Tab element
 {
     "class": "tab_control",
-    "content_margin": [8,0],
+    "content_margin": [12,0],
     "max_margin_trim": 0,
     "hit_test_level": 0,
     "layer0.texture": null,
-    "layer0.tint": [30,30,30],
+    "layer0.tint": ["background", 0, 0, 0, 0.4],
     "layer0.inner_margin": [5,5],
     "layer0.opacity": 1
 },
@@ -36,7 +37,7 @@
 {
     "class": "tab_control",
     "settings": ["show_tab_close_buttons"],
-    "content_margin": [8,0]
+    "content_margin": [12,0]
 },
 // Tab hover state
 {
@@ -49,12 +50,13 @@
     "class": "tab_control",
     "attributes": ["selected"],
     "layer0.texture": "",
-    "layer0.tint": [60,60,60]
+    "layer0.tint": ["background", 0, 0, 0, 1],
 },
 
 {
     "class": "tab_label",
     "font.face": "{{fontface}}",
+    "font.size": 12,
     "fg": ["hsl", 0, 0, 50]
 },
 

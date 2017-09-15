@@ -6,8 +6,12 @@
 {
     "class": "title_bar",
     "fg": ["background", 255, 255, 255, 0.7],
-    "bg": ["background", 30, 30, 30, 1.0]
+    "bg": ["background", 0, 0, 0, 0.4]
 },
+// {
+//     "class": "edit_window",
+//     "content_margin": [26, 8, 22, 4]
+// },
 // {
 //     "class": "title_bar",
 //     "attributes": ["file_dark"],
@@ -45,7 +49,7 @@
 {
     "class": "grid_layout_control",
     "border_size": 1,
-    "border_color": [0,0,0]
+    "border_color": ["background", 0, 0, 0, 0.4]
 },
 
 //

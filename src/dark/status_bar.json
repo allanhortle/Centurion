@@ -6,11 +6,9 @@
 // Status bar container
 {
     "class": "status_bar",
-    "layer0.texture": "",
-    "layer0.tint": [50,50,50],
+    "layer0.tint": ["background", 255,255,255, 0.1],
     "layer0.opacity": 1,
-    "layer0.inner_margin": [0,0],
-    "content_margin": [8,4,0,4]
+    "content_margin": 4
 },
 {
     "class": "status_container",

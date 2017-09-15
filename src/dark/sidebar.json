@@ -7,22 +7,17 @@
 // Sidebar container
 {
     "class": "sidebar_container",
-    // "layer0.texture": "{{folderName}}/Centurion/folder-closed.png",
     "layer0.opacity": 1,
-    "layer0.tint": [30, 30, 30],
-    "layer0.draw_center": false,
-    "layer0.inner_margin": [1,5,2,1],
-    "content_margin": [0,4,0,0]
+    "layer0.tint": ["background", 0, 0, 0, 0.4],
+    "content_margin": [0, 8, 0, 0],
 },
 // Sidebar tree
 {
     "class": "sidebar_tree",
-    "row_padding": [8,3],
-    "indent":16,
-    "indent_offset": 0,
-    "indent_top_level": false,
-    "layer0.tint": [30, 30, 30],
-    "layer0.opacity": 1.0,
+    "row_padding": [16,3],
+    "indent": 10,
+    "indent_offset": -2,
+    "indent_top_level": true,
     "dark_content": true
 },
 
@@ -30,7 +25,8 @@
 {
     "class": "tree_row",
     "layer0.texture": "",
-    "layer0.tint": [60,60,60],
+    // "layer0.tint": [60,60,60],
+    "layer0.tint": ["background", 150, 150, 150, 0.1],
     "layer0.opacity": 0,
     "layer0.inner_margin": [1,1]
 },
@@ -43,8 +39,9 @@
 // Sidebar heading
 {
     "class": "sidebar_heading",
-    "color": [210,210,210],
-    "font.bold": true,
+    "color": ["hsl", 0,0,80],
+    "font.bold": false,
+    "font.size": 12,
     "font.face": "{{fontface}}",
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
@@ -59,8 +56,8 @@
 {
     "class": "sidebar_label",
     "font.face": "{{fontface}}",
-    "font.size": 11,
-    "color": [125,125,125],
+    "font.size": 12,
+    "color": ["hsl", 0,0,54],
     "shadow_color": [0,0,0],
     "shadow_offset": [0,0]
 },
