@@ -6,40 +6,27 @@
 {
     "class": "title_bar",
     "fg": ["background", 255, 255, 255, 0.7],
-    "bg": ["background", 0, 0, 0, 0.4]
+    "bg": ["background", 0, 0, 0, 0.6]
 },
-// {
-//     "class": "edit_window",
-//     "content_margin": [26, 8, 22, 4]
-// },
-// {
-//     "class": "title_bar",
-//     "attributes": ["file_dark"],
-//     "bg": ["background", 255, 255, 255, 0.15]
-// },
-// {
-//     "class": "title_bar",
-//     "attributes": ["file_medium"],
-//     "bg": ["background", 0, 0, 0, 0.2]
-// },
-// {
-//     "class": "title_bar",
-//     "attributes": ["file_light"],
-//     "fg": ["background", 0, 0, 0, 0.7],
-//     "bg": ["background", 0, 0, 0, 0.1]
-// },
+{
+    "class": "title_bar",
+    "attributes": ["file_light"],
+    "fg": ["foreground", 1],
+    "bg": ["background", 0.8]
+},
 
 
 //
 // EMPTY WINDOW BACKGROUND
 //
 
-{
-    "class": "window"
-},
+// {
+//     "class": "window"
+// },
 {
     "class": "sheet_container_control",
-    "layer0.tint": [20,20,20]
+    "layer0.tint": [0,0,0],
+    "layer0.opacity": 1
 },
 
 //
@@ -49,16 +36,30 @@
 {
     "class": "grid_layout_control",
     "border_size": 1,
-    "border_color": ["background", 0, 0, 0, 0.4]
+    "border_color": ["background", 0, 0, 0, 0.25]
 },
 
 //
 // MINI MAP
 //
-
 {
     "class": "minimap_control",
-    "viewport_color": [255,255,255,30]
+    "settings": ["always_show_minimap_viewport"],
+    "viewport_color": [255,255,255, 30],
+    "viewport_opacity": 0.4,
+},
+{
+    "class": "minimap_control",
+    "settings": ["!always_show_minimap_viewport"],
+    "viewport_color": [128, 128, 128, 0.25],
+    "viewport_opacity": { "target": 0.0, "speed": 20, "interpolation": "smoothstep" },
+},
+{
+    "class": "minimap_control",
+    "attributes": ["hover"],
+    "settings": ["!always_show_minimap_viewport"],
+    "viewport_color": [128, 128, 128, 0.25],
+    "viewport_opacity": { "target": 0.4, "speed": 20, "interpolation": "smoothstep" },
 },
 
 //
@@ -68,11 +69,18 @@
 // Text input field item
 {
     "class": "text_line_control",
-    "layer0.opacity": 1.0,
-    "layer0.inner_margin": [4, 5, 4, 3],
-    "layer0.tint": [30,30,30],
+    "layer0.opacity": 1,
+    "layer0.tint": ["background", 0,0,0, 0.4],
+    "color_scheme_tint": ["background", 0,0,0, 0.4],
     "content_margin": 8
 },
+{
+    "class": "text_line_control",
+    "parents": [{"class": "window", "attributes": ["file_light"]}],
+    "layer0.tint": ["background", 0,0,0, 0.3],
+    "color_scheme_tint": ["background", 0,0,0, 0.3]
+},
+
 
 //
 // PANEL BACKGROUNDS
@@ -81,12 +89,21 @@
 // Bottom panel background
 {
     "class": "panel_control",
-    "layer0.inner_margin": [0,0],
-    "layer0.texture": "",
     "layer0.opacity": 1,
-    "layer0.tint": [50,50,50],
-    "content_margin": 0
+    "layer0.tint": ["background", 0.6],
 },
+{
+    "class": "panel_control",
+    "parents": [{"class": "window", "attributes": ["file_light"]}],
+    "layer0.tint": ["background", 0.7],
+},
+{
+    "class": "panel_grid_control",
+    "inside_spacing": 0,
+    "outside_hspacing": 0,
+    "outside_vspacing": 0
+},
+
 
 //
 // LABELS
@@ -96,24 +113,12 @@
 {
     "class": "label_control",
     "font.face": "{{fontface}}",
-    "color": [220,220,220]
+    "color": ["foreground", 0,0,0, 1],
 },
 {
     "class": "title_label_control",
     "font.face": "{{fontface}}",
     "color": [220,220,220]
-},
-
-// Text field labels
-{
-    "class": "label_control",
-    "parents": [{"class": "panel_control"}]
-},
-
-// Button labels
-{
-    "class": "label_control",
-    "parents": [{"class": "button_control"}]
 },
 
 //

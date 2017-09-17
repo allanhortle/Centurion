@@ -3,11 +3,16 @@
 {
     "class": "overlay_control",
     "layer0.opacity": 1,
-    "layer1.tint": [50,50,50],
-    "layer1.inner_margin": 0,
-    "layer1.opacity": 1,
+    "layer0.tint": ["background", 0, 0, 0, 0.6],
     "content_margin": 0
 },
+{
+    "class": "overlay_control",
+    "parents": [{"class": "window", "attributes": ["file_light"]}],
+    "layer0.tint": ["background", 0, 0, 0, 0.1]
+},
+
+
 
 //
 // QUICK PANEL
@@ -15,17 +20,11 @@
 
 {
     "class": "quick_panel",
-    "row_padding": 16,
-    "layer0.tint": [30,30,30],
-    "layer0.opacity": 1
-    //"dark_content": true
+    "row_padding": [16, 12]
 },
 {
     "class": "quick_panel_row",
-    "layer0.texture": "",
-    "layer0.tint": [30,30,30],
-    "layer0.inner_margin": 8,
-    "layer0.opacity": 1
+    "layer0.opacity": 0
 },
 {
     "class": "quick_panel_row",
@@ -67,24 +66,24 @@
 {
     "class": "quick_panel_label",
     "font.face": "{{fontface}}",
-    "fg": [180,180,180],
-    "match_fg": [255, 255, 255, 0],
+    "fg": ["foreground", 1],
+    "match_fg": [255,255,255],
     "selected_fg": [255,255,255],
-    "selected_match_fg": [80, 80, 80]
+    "selected_match_fg": ["background", 255, 255, 255, 0.1]
 },
 
 {
     "class": "quick_panel_path_label",
     "font.face": "{{fontface}}",
-    "fg": [130,130,130,0],
+    "fg": ["foreground", 0,0,0, 0.3],
     "match_fg": [220,220,220],
-    "selected_fg": [80, 80, 80],
-    "selected_match_fg": [255,255,255]
+    "selected_fg": [255,255,255],
+    "selected_match_fg": ["background", 255, 255, 255, 0.1]
 },
 {
     "class": "quick_panel_score_label",
     "font.face": "{{fontface}}",
-    "fg": [150,150,150],
+    "fg": ["foreground", 0.9],
     "selected_fg": [255,255,255]
 },
 
@@ -94,8 +93,7 @@
 
 {
     "class": "mini_quick_panel_row",
-    "layer0.texture": "",
-    "layer0.tint": [30,30,30],
+    "layer0.tint": ["background", 0.4],
     "layer0.opacity": 1
 },
 {

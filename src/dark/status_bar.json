@@ -6,46 +6,53 @@
 // Status bar container
 {
     "class": "status_bar",
-    "layer0.tint": ["background", 255,255,255, 0.1],
+    "layer0.tint": ["background", 0,0,0, 0.2],
     "layer0.opacity": 1,
     "content_margin": 4
+},
+{
+    "class": "status_bar",
+    "parents": [{"class": "window", "attributes": ["file_light"]}],
+    "layer0.tint": ["background", 0,0,0, 0.25],
 },
 {
     "class": "status_container",
     "content_margin": 0
 },
-// Status bar button
+
+// // Status bar button
 {
     "class": "status_button",
-    "layer0.tint": [40, 40, 40],
-    "layer0.opacity": 0,
-    "layer0.draw_center": false,
-    "layer0.inner_margin": [1, 0, 0, 0],
     "content_margin": [8,0],
-    "min_size": [0, 0]
-},
-// Status bar label
-{
-    "class": "label_control",
-    "font.face": "{{fontface}}",
-    "parents": [{"class": "status_bar"}],
-    "color": [150,150,150],
-    "shadow_offset": [0,0]
 },
 
 
-//
-// Panel Close
 {
-    "class": "panel_close_button",
-    "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
+  "class": "panel_button_control",
+  "layer0.texture": "Theme - Default/common/light/panels_button.png",
+  "layer0.opacity": 1,
+  "content_margin": 10
 },
+
 {
-    "class": "panel_close_button",
-    "layer0.tint": ["background", 255, 255, 255, 1.0]
-},
-{
-    "class": "panel_close_button",
-    "attributes": ["hover"],
-    "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
+    "class": "status_container",
+    "content_margin": [8, 0, 0, 0]
 }
+
+
+// //
+// // Panel Close
+// {
+//     "class": "panel_close_button",
+//     // "layer1.tint": [255,0,0],
+//     "layer0.opacity": { "target": 0.4, "speed": 4.0, "interpolation": "smoothstep" },
+// },
+// {
+//     "class": "panel_close_button",
+//     "layer0.tint": ["background", 255, 255, 255, 1.0],
+// },
+// {
+//     "class": "panel_close_button",
+//     "attributes": ["hover"],
+//     "layer0.opacity": { "target": 0.6, "speed": 4.0, "interpolation": "smoothstep" },
+// }

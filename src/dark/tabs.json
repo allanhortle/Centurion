@@ -5,9 +5,7 @@
 // Tab set
 {
     "class": "tabset_control",
-    "layer0.texture": "",
-    // "layer0.tint": [30,30,30],
-    "layer0.tint": ["background", 0, 0, 0, 0.4],
+    "layer0.tint": ["background", 0, 0, 0, 0.6],
     "layer0.inner_margin": [10, 0],
     "layer0.opacity": 1,
     "content_margin": [0, 8, 0, 0],
@@ -16,6 +14,11 @@
     "tab_min_width": 45,
     "tab_height": 32,
     "mouse_wheel_switch": false
+},
+{
+    "class": "tabset_control",
+    "parents": [{"class": "window", "attributes": ["file_light"]}],
+    "layer0.tint": ["background", 0.8],
 },
 {
     "class": "tabset_control",
@@ -28,10 +31,13 @@
     "content_margin": [12,0],
     "max_margin_trim": 0,
     "hit_test_level": 0,
-    "layer0.texture": null,
-    "layer0.tint": ["background", 0, 0, 0, 0.4],
+    "layer0.tint": ["background", 0],
     "layer0.inner_margin": [5,5],
     "layer0.opacity": 1
+},
+{
+    "class": "tab_control",
+    "parents": [{"class": "window", "attributes": ["file_light"]}],
 },
 // Tab close state
 {
@@ -57,13 +63,21 @@
     "class": "tab_label",
     "font.face": "{{fontface}}",
     "font.size": 12,
-    "fg": ["hsl", 0, 0, 50]
+    "fg": ["foreground", 0.6]
 },
 
 {
     "class": "tab_label",
     "parents": [{"class": "tab_control", "attributes": ["selected"]}],
-    "fg": ["hsl", 0, 0, 90]
+    "fg": ["foreground", 1]
+},
+{
+    "class": "tab_label",
+    "parents": [
+      {"class": "window", "attributes": ["file_light"]},
+      {"class": "tab_control", "attributes": ["selected"]}
+    ],
+    "fg": ["foreground", 0.8]
 },
 
 
