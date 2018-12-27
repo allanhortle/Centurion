@@ -367,7 +367,6 @@
     "row_padding": 8,
     "layer0.tint": [30,30,30],
     "layer0.opacity": 1
-    //"dark_content": true
 },
 {
     "class": "quick_panel_row",
@@ -416,14 +415,14 @@
 {
     "class": "quick_panel_label",
     "fg": [180,180,180],
-    "match_fg": [255, 255, 255, 0],
+    "match_fg": [255, 255, 255],
     "selected_fg": [255,255,255],
     "selected_match_fg": [80, 80, 80]
 },
 
 {
     "class": "quick_panel_path_label",
-    "fg": [130,130,130,0],
+    "fg": [130,130,130],
     "match_fg": [220,220,220],
     "selected_fg": [80, 80, 80],
     "selected_match_fg": [255,255,255]
